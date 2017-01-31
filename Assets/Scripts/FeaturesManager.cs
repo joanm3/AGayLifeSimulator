@@ -11,47 +11,15 @@ public class FeaturesManager : MonoBehaviour
 
     void OnEnable()
     {
+        for (int i = 0; i < features.Count; ++i)
+        {
+            int index = i;
 
-
-        if (features[0].previousButton != null)
-            features[0].previousButton.onClick.AddListener(() => features[0].NextChoice());
-        if (features[0].nextButton != null)
-            features[0].nextButton.onClick.AddListener(() => features[0].PreviousChoice());
-
-        if (features[1].previousButton != null)
-            features[1].previousButton.onClick.AddListener(() => features[1].NextChoice());
-        if (features[1].nextButton != null)
-            features[1].nextButton.onClick.AddListener(() => features[1].PreviousChoice());
-
-        if (features[2].previousButton != null)
-            features[2].previousButton.onClick.AddListener(() => features[2].NextChoice());
-        if (features[2].nextButton != null)
-            features[2].nextButton.onClick.AddListener(() => features[2].PreviousChoice());
-
-        if (features[3].previousButton != null)
-            features[3].previousButton.onClick.AddListener(() => features[3].NextChoice());
-        if (features[3].nextButton != null)
-            features[3].nextButton.onClick.AddListener(() => features[3].PreviousChoice());
-
-        if (features[4].previousButton != null)
-            features[4].previousButton.onClick.AddListener(() => features[4].NextChoice());
-        if (features[4].nextButton != null)
-            features[4].nextButton.onClick.AddListener(() => features[4].PreviousChoice());
-
-        if (features[5].previousButton != null)
-            features[5].previousButton.onClick.AddListener(() => features[5].NextChoice());
-        if (features[5].nextButton != null)
-            features[5].nextButton.onClick.AddListener(() => features[5].PreviousChoice());
-
-
-        //CHECK LATER WHY THE FUCK ITS NOT WORKING!!
-        //for (int i = 0; i < features.Count /*- 1*/; i++)
-        //{
-        //    if (features[i].previousButton != null)
-        //        features[i].previousButton.onClick.AddListener(() => features[i].NextChoice());
-        //    if (features[i].nextButton != null)
-        //        features[i].nextButton.onClick.AddListener(() => features[i].PreviousChoice());
-        //}
+            if (features[index].previousButton != null)
+                features[index].previousButton.onClick.AddListener(() => features[index].NextChoice());
+            if (features[index].nextButton != null)
+                features[index].nextButton.onClick.AddListener(() => features[index].PreviousChoice());
+        }
 
         LoadFeatures();
     }
@@ -89,10 +57,8 @@ public class FeaturesManager : MonoBehaviour
             string key = "FEATURE_" + i;
             PlayerPrefs.SetInt(key, features[i].currIndex);
         }
+
     }
-
-
-
 
 }
 
