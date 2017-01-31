@@ -26,12 +26,18 @@ public class FeaturesManager : MonoBehaviour
 
     void OnDisable()
     {
-        SaveFeatures();
-    }
 
-    void Test(int index)
-    {
-        Debug.Log("pressed: " + index);
+        for (int i = 0; i < features.Count; ++i)
+        {
+            int index = i;
+
+            if (features[index].previousButton != null)
+                features[index].previousButton.onClick.RemoveAllListeners();
+            if (features[index].nextButton != null)
+                features[index].nextButton.onClick.RemoveAllListeners();
+        }
+
+        SaveFeatures();
     }
 
     void LoadFeatures()
@@ -90,12 +96,15 @@ public class Feature
 
     public void NextChoice()
     {
+        Debug.Log("clicked next button");
+
         currIndex++;
         UpdateFeature();
     }
 
     public void PreviousChoice()
     {
+        Debug.Log("clicked previous button");
         currIndex--;
         UpdateFeature();
     }
@@ -103,19 +112,24 @@ public class Feature
     public void UpdateFeature()
     {
 
-        if (choices == null || UIImage == null)
+        if (choices == null || choices.Length < 1)
             return;
 
-        if (choices.Length < 1)
-            return;
 
         if (currIndex < 0)
             currIndex = choices.Length - 1;
         if (currIndex >= choices.Length)
             currIndex = 0;
 
-        UIImage.sprite = choices[currIndex].sprite;
-        UIText.text = choices[currIndex].text;
+        if (UIImage != null)
+        {
+            UIImage.sprite = choices[currIndex].sprite;
+        }
+
+        if (UIText != null)
+        {
+            UIText.text = choices[currIndex].text;
+        }
     }
 
 }
