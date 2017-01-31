@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [ExecuteInEditMode]
-public class FeaturesManager : MonoBehaviour
+public class FeaturesManager : Singleton<FeaturesManager>
 {
 
     public List<Feature> features;
@@ -123,10 +123,10 @@ public class Feature
 
         if (UIImage != null)
         {
-            if (!isColorType)
-                UIImage.sprite = choices[currIndex].sprite;
-            else
+            if (isColorType)
                 UIImage.color = choices[currIndex].color;
+            else
+                UIImage.sprite = choices[currIndex].sprite;
 
         }
 

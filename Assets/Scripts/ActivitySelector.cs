@@ -40,6 +40,7 @@ public class ActivitySelector : MonoBehaviour
 
     void HandleSelectors(bool value)
     {
+        //check if we activated something. 
         if (value == true)
         {
             for (int i = 0; i < Activities.Length; i++)
@@ -52,6 +53,8 @@ public class ActivitySelector : MonoBehaviour
             valueChanged = true;
         }
 
+        //if selection is different, make new selection active
+        //and desactivate the others
         if (valueChanged)
         {
             Activities[SelectedActivity].activityToggle.isOn = true;
@@ -71,6 +74,8 @@ public class ActivitySelector : MonoBehaviour
             }
             valueChanged = false;
         }
+
+        //if selection is the same, unselect the toggle. 
         else
         {
             for (int j = 0; j < Activities[SelectedActivity].subActivitiesToggles.Length; j++)
@@ -89,9 +94,7 @@ public class FoldoutActivities
     public string ID;
     public Toggle activityToggle;
     public Canvas subActivitiesCanvas;
-
     public Toggle[] subActivitiesToggles;
-
 
     public void Initialize()
     {

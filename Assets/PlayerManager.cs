@@ -5,6 +5,28 @@ using UnityEngine;
 public class PlayerManager : Singleton<PlayerManager>
 {
     public PlayerInfo Info;
+
+
+
+    void Start()
+    {
+
+        //better to get keys from playerprefs.  to do later. 
+        for (int i = 0; i < FeaturesManager.Instance.features.Count; i++)
+        {
+            if (FeaturesManager.Instance.features[i].ID == "Role")
+            {
+                Info.Nature.PreferedRole = FeaturesManager.Instance.features[i].currIndex;
+            }
+        }
+
+        Info.Nature.HIVStatus = 0;
+
+    }
+
+
+
+
 }
 
 [System.Serializable]
