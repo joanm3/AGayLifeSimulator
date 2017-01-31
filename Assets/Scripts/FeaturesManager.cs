@@ -73,6 +73,7 @@ public class FeaturesManager : MonoBehaviour
 public class Feature
 {
     public string ID;
+    public bool isColorType = false;
     public int currIndex;
     public FeatureProps[] choices;
     public Image UIImage;
@@ -83,8 +84,9 @@ public class Feature
     [System.Serializable]
     public struct FeatureProps
     {
-        public Sprite sprite;
         public string text;
+        public Sprite sprite;
+        public Color color;
     }
 
     public Feature(string id, Image rend)
@@ -96,15 +98,14 @@ public class Feature
 
     public void NextChoice()
     {
-        Debug.Log("clicked next button");
-
+        //Debug.Log("clicked next button");
         currIndex++;
         UpdateFeature();
     }
 
     public void PreviousChoice()
     {
-        Debug.Log("clicked previous button");
+        //Debug.Log("clicked previous button");
         currIndex--;
         UpdateFeature();
     }
@@ -123,7 +124,11 @@ public class Feature
 
         if (UIImage != null)
         {
-            UIImage.sprite = choices[currIndex].sprite;
+            if (!isColorType)
+                UIImage.sprite = choices[currIndex].sprite;
+            else
+                UIImage.color = choices[currIndex].color;
+
         }
 
         if (UIText != null)

@@ -7,21 +7,17 @@ public class OnMouseOverInfo : MonoBehaviour
 {
     // public string information;
 
-    private Text infoText;
+    public Text infoText;
 
     // Use this for initialization
     void Start()
     {
-        infoText = GameObject.FindGameObjectWithTag("InfoText").GetComponent<Text>();
+        if (infoText == null)
+            infoText = GameObject.FindGameObjectWithTag("InfoText").GetComponent<Text>();
     }
 
     // Update is called once per frame
 
-
-    void OnMouseUpdate()
-    {
-        Debug.Log("here mouse");
-    }
 
     public void ShowText(string text)
     {

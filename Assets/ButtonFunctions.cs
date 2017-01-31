@@ -8,17 +8,7 @@ public class ButtonFunctions : MonoBehaviour
 
     public void SetCanvasActiveOrDesactivate(Canvas canvas)
     {
-        canvas.enabled = !canvas.enabled;
-    }
-
-    public void CopyTextFromOther(Text[] fromText)
-    {
-        //toText.text = fromText.text;
-    }
-
-    public void CopyTextFromOther(string fromText)
-    {
-
+        canvas.gameObject.SetActive(!canvas.gameObject.activeInHierarchy);
     }
 
 }
