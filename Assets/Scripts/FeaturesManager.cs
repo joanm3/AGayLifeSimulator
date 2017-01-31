@@ -36,7 +36,6 @@ public class FeaturesManager : MonoBehaviour
             if (features[index].nextButton != null)
                 features[index].nextButton.onClick.RemoveAllListeners();
         }
-
         SaveFeatures();
     }
 
