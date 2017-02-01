@@ -66,11 +66,13 @@ public class ProfileInformationSetter : MonoBehaviour
     public void SetProfileName(Text text)
     {
         profileName.text = text.text;
+        PlayerManager.Instance.Info.Profile.Name = text.text;
     }
 
     public void SetAge(Text text)
     {
-        age.text = text.text;
+        age.text = int.Parse(text.text).ToString();
+        PlayerManager.Instance.Info.Profile.Age = text.text;
     }
 
     public void SetRole(Text text)
@@ -86,27 +88,16 @@ public class ProfileInformationSetter : MonoBehaviour
         {
             if (FeaturesManager.Instance.features[i].ID == "Role")
             {
-                PlayerManager.Instance.Info.Nature.PreferedRole = FeaturesManager.Instance.features[i].currIndex;
+                PlayerManager.Instance.Info.Profile.Role = FeaturesManager.Instance.features[i].currIndex;
             }
         }
-
     }
 
     public void SetHivStatus(Text text)
     {
-
         hivStatus.text = text.text;
-        PlayerManager.Instance.Info.Nature.HIVStatus = text.text.Contains("-") ? 0 : 1;
-        //StartCoroutine(SetRoleCoroutine(text));
-
+        PlayerManager.Instance.Info.Profile.HIVStatus = text.text.Contains("-") ? 0 : 1;
     }
 
-    IEnumerator SetHIVStatusCoroutine(Text text)
-    {
-        yield return new WaitForEndOfFrame();
-        hivStatus.text = text.text;
-        PlayerManager.Instance.Info.Nature.HIVStatus = text.text.Contains("-") ? 0 : 1;
-
-    }
 
 }
