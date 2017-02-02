@@ -115,11 +115,10 @@ public class PlayerManager : Singleton<PlayerManager>
     public void ReinitializeGame()
     {
         Info = StartingDefaultPlayerInfo.Clone();
+        if (UIManager.Instance == null)
+            UIManager.Init();
+        UIManager.Instance.UpdateAllUI();
     }
-
-
-
-
 }
 
 [System.Serializable]
@@ -131,7 +130,7 @@ public class PlayerInfo
     public PlayerNature Nature;
     public PlayerStats Stats;
     public PlayerState State;
-    public int Test = 2; 
+    public int Test = 2;
 
     [System.Serializable]
     public struct PlayerNature

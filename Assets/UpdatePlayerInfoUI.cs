@@ -27,6 +27,11 @@ public class UpdatePlayerInfoUI : MonoBehaviour
 
     public void Start()
     {
+        UpdateUI();
+    }
+
+    public void UpdateUI()
+    {
         for (int i = 0; i < UITextFields.Length; i++)
         {
             var result = PlayerManager.Instance.GetPropValue(UITextFields[i].FieldName);
@@ -49,8 +54,6 @@ public class UpdatePlayerInfoUI : MonoBehaviour
             }
         }
     }
-
-
 
 }
 

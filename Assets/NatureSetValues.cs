@@ -170,6 +170,9 @@ public class NatureSetValues : MonoBehaviour
             PlayerManager.Instance.Info.NatureInitialized = 1;
             PlayerManager.Instance.SaveFeatures();
 
+            if (UIManager.Instance == null)
+                UIManager.Init();
+            UIManager.Instance.UpdateAllUI();
         }
     }
 
@@ -177,6 +180,7 @@ public class NatureSetValues : MonoBehaviour
     {
         PlayerManager.Instance.Info.NatureInitialized = 0;
         PlayerManager.Instance.ReinitializeGame();
+
         EditProfileCanvas.gameObject.SetActive(true);
         for (int i = 0; i < HideTransformsBeforeChoosingNature.Length; i++)
         {
