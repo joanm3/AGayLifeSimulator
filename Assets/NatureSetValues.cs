@@ -13,7 +13,9 @@ public class NatureSetValues : MonoBehaviour
 
     [Header("Confirm Values")]
     public Button ConfirmButton;
+    [TextArea(3, 10)]
     public string ConfirmTextWithMaxPoints;
+    [TextArea(3, 10)]
     public string ConfirmTextWithoutMaxPoints;
     public Text ConfirmText;
 

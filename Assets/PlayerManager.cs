@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using GayProject.DataManagement;
 using UnityEngine.UI;
-
+using System;
+using System.Reflection;
 
 public class PlayerManager : Singleton<PlayerManager>
 {
@@ -15,7 +16,7 @@ public class PlayerManager : Singleton<PlayerManager>
     public PlayerInfo Info;
     [Space(10)]
     public PlayerInfo StartingDefaultPlayerInfo;
-
+    public int Test = 1;
 
     void OnEnable()
     {
@@ -117,6 +118,8 @@ public class PlayerManager : Singleton<PlayerManager>
     }
 
 
+
+
 }
 
 [System.Serializable]
@@ -128,6 +131,7 @@ public class PlayerInfo
     public PlayerNature Nature;
     public PlayerStats Stats;
     public PlayerState State;
+    public int Test = 2; 
 
     [System.Serializable]
     public struct PlayerNature
@@ -207,6 +211,7 @@ public class PlayerInfo
 
         this.Stats.BodyFat = other.Stats.BodyFat;
         this.Stats.BodyMuscles = other.Stats.BodyMuscles;
+        this.Stats.BodyHair = other.Stats.BodyHair;
         this.Stats.Sympathy = other.Stats.Sympathy;
         this.Stats.Intelligence = other.Stats.Intelligence;
         this.Stats.SexStamina = other.Stats.SexStamina;
