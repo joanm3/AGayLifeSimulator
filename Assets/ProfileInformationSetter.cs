@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using GayProject.DataManagement;
 
 public class ProfileInformationSetter : MonoBehaviour
 {
@@ -9,59 +10,6 @@ public class ProfileInformationSetter : MonoBehaviour
     public Text age;
     public Text role;
     public Text hivStatus;
-
-
-
-    void OnEnable()
-    {
-        LoadFeatures();
-    }
-
-    void OnDisable()
-    {
-        SaveFeatures();
-    }
-
-    void LoadFeatures()
-    {
-
-        string key = "PROFILE_NAME";
-        if (!PlayerPrefs.HasKey(key))
-            PlayerPrefs.SetString(key, profileName.text);
-        profileName.text = PlayerPrefs.GetString(key);
-
-        key = "PROFILE_AGE";
-        if (!PlayerPrefs.HasKey(key))
-            PlayerPrefs.SetString(key, age.text);
-        age.text = PlayerPrefs.GetString(key);
-
-        key = "PROFILE_ROLE";
-        if (!PlayerPrefs.HasKey(key))
-            PlayerPrefs.SetString(key, role.text);
-        role.text = PlayerPrefs.GetString(key);
-
-        key = "PROFILE_HIVSTATUTS";
-        if (!PlayerPrefs.HasKey(key))
-            PlayerPrefs.SetString(key, hivStatus.text);
-        hivStatus.text = PlayerPrefs.GetString(key);
-    }
-
-    void SaveFeatures()
-    {
-        string key = "PROFILE_NAME";
-        PlayerPrefs.SetString(key, profileName.text);
-
-        key = "PROFILE_AGE";
-        PlayerPrefs.SetString(key, age.text);
-
-        key = "PROFILE_ROLE";
-        PlayerPrefs.SetString(key, role.text);
-
-        key = "PROFILE_HIVSTATUTS";
-        PlayerPrefs.SetString(key, hivStatus.text);
-    }
-
-
 
     public void SetProfileName(Text text)
     {
@@ -89,6 +37,10 @@ public class ProfileInformationSetter : MonoBehaviour
             if (FeaturesManager.Instance.features[i].ID == "Role")
             {
                 PlayerManager.Instance.Info.Profile.Role = FeaturesManager.Instance.features[i].currIndex;
+            }
+            else
+            {
+                Debug.LogError("not found the Role ID in FeaturesManager list of features. \nMake sure a Role feature with the ID == Role exists", FeaturesManager.Instance);
             }
         }
     }
