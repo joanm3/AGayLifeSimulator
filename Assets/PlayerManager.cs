@@ -13,7 +13,8 @@ public class PlayerManager : Singleton<PlayerManager>
     public Text Role;
     [Space(10)]
     public PlayerInfo Info;
-
+    [Space(10)]
+    public PlayerInfo StartingDefaultPlayerInfo;
 
 
     void OnEnable()
@@ -56,7 +57,6 @@ public class PlayerManager : Singleton<PlayerManager>
         FData.LoadFeature("NATURE_FACE", ref Info.Nature.PrettyFace);
         FData.LoadFeature("NATURE_DICK", ref Info.Nature.DickSize);
         FData.LoadFeature("NATURE_ASS", ref Info.Nature.AssEndurance);
-        FData.LoadFeature("NATURE_BODY", ref Info.Nature.BodyGrowth);
         FData.LoadFeature("NATURE_ORAL", ref Info.Nature.OralTalent);
 
         FData.LoadFeature("STATS_BFAT", ref Info.Stats.BodyFat);
@@ -73,6 +73,8 @@ public class PlayerManager : Singleton<PlayerManager>
 
         FData.LoadFeature("STATE_SALARY", ref Info.State.Salary);
         FData.LoadFeature("STATE_FATIGUE", ref Info.State.Fatigue);
+        FData.LoadFeature("STATE_MAXFATIGUE", ref Info.State.MaxFatigue);
+
         FData.LoadFeature("STATE_SELFCONFIDENCE", ref Info.State.SelfConfidence);
 
     }
@@ -88,7 +90,6 @@ public class PlayerManager : Singleton<PlayerManager>
         FData.SaveFeature("NATURE_FACE", ref Info.Nature.PrettyFace);
         FData.SaveFeature("NATURE_DICK", ref Info.Nature.DickSize);
         FData.SaveFeature("NATURE_ASS", ref Info.Nature.AssEndurance);
-        FData.SaveFeature("NATURE_BODY", ref Info.Nature.BodyGrowth);
         FData.SaveFeature("NATURE_ORAL", ref Info.Nature.OralTalent);
 
         FData.SaveFeature("STATS_BFAT", ref Info.Stats.BodyFat);
@@ -105,12 +106,14 @@ public class PlayerManager : Singleton<PlayerManager>
 
         FData.SaveFeature("STATE_SALARY", ref Info.State.Salary);
         FData.SaveFeature("STATE_FATIGUE", ref Info.State.Fatigue);
+        FData.SaveFeature("STATE_MAXFATIGUE", ref Info.State.MaxFatigue);
+
         FData.SaveFeature("STATE_SELFCONFIDENCE", ref Info.State.SelfConfidence);
     }
 
     public void ReinitializeGame()
     {
-        // throw new System.NotImplementedException();
+        Info = StartingDefaultPlayerInfo.Clone();
     }
 
 
@@ -136,8 +139,6 @@ public class PlayerInfo
         [Range(0, 4)]
         public int AssEndurance;
         [Range(0, 4)]
-        public int BodyGrowth;
-        [Range(0, 4)]
         public int OralTalent;
     }
 
@@ -147,6 +148,7 @@ public class PlayerInfo
     {
         public float BodyFat;
         public int BodyMuscles;
+        [Range(0, 5)]
         public int BodyHair;
         public int Sympathy;
         public int Intelligence;
@@ -163,6 +165,7 @@ public class PlayerInfo
 
         public int Salary;
         public int Fatigue;
+        public int MaxFatigue;
         public int SelfConfidence;
     }
 
@@ -184,5 +187,51 @@ public class PlayerInfo
         [Tooltip("Zero = HIV- / One = HIV+")]
         public int HIVStatus;
     }
+
+    public PlayerInfo()
+    {
+
+    }
+
+    protected PlayerInfo(PlayerInfo other)
+    {
+        this.Profile.Name = other.Profile.Name;
+        this.Profile.Age = other.Profile.Age;
+        this.Profile.Role = other.Profile.Role;
+        this.Profile.HIVStatus = other.Profile.HIVStatus;
+
+        this.Nature.PrettyFace = other.Nature.PrettyFace;
+        this.Nature.DickSize = other.Nature.DickSize;
+        this.Nature.AssEndurance = other.Nature.AssEndurance;
+        this.Nature.OralTalent = other.Nature.OralTalent;
+
+        this.Stats.BodyFat = other.Stats.BodyFat;
+        this.Stats.BodyMuscles = other.Stats.BodyMuscles;
+        this.Stats.Sympathy = other.Stats.Sympathy;
+        this.Stats.Intelligence = other.Stats.Intelligence;
+        this.Stats.SexStamina = other.Stats.SexStamina;
+        this.Stats.Sexiness = other.Stats.Sexiness;
+
+        this.State.SexCount = other.State.SexCount;
+        this.State.DaysLeft = other.State.DaysLeft;
+        this.State.Money = other.State.Money;
+        this.State.Salary = other.State.Salary;
+        this.State.Fatigue = other.State.Fatigue;
+        this.State.MaxFatigue = other.State.MaxFatigue;
+        this.State.SelfConfidence = other.State.SelfConfidence;
+
+    }
+
+
+    public static PlayerInfo CopyFrom(PlayerInfo other)
+    {
+        return new PlayerInfo(other);
+    }
+
+    public PlayerInfo Clone()
+    {
+        return new PlayerInfo(this);
+    }
+
 
 }

@@ -58,10 +58,12 @@ public class NatureSetValues : MonoBehaviour
         ConfirmButton.onClick.AddListener(() => OnConfirmButtonClick());
         ResetGameButton.onClick.AddListener(() => OnResetButtonClick());
 
+        //if player hasnt been chosen yet, do this. 
         if (PlayerManager.Instance != null)
         {
             if (PlayerManager.Instance.Info.NatureInitialized == 0)
             {
+                PlayerManager.Instance.Info = PlayerManager.Instance.StartingDefaultPlayerInfo.Clone();
                 EditProfileCanvas.gameObject.SetActive(true);
                 for (int i = 0; i < HideTransformsBeforeChoosingNature.Length; i++)
                 {
