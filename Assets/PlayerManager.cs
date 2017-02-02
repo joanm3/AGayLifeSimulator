@@ -28,9 +28,9 @@ public class PlayerManager : Singleton<PlayerManager>
 
 
 
-    void LoadFeatures()
+    public void LoadFeatures()
     {
-
+        FData.LoadFeature("NATURE_INITIALIZED", ref Info.NatureInitialized);
         FData.LoadFeature("PROFILE_NAME", ref Info.Profile.Name);
         FData.LoadFeature("PROFILE_AGE", ref Info.Profile.Age);
         FData.LoadFeature("PROFILE_ROLE", ref Info.Profile.Role);
@@ -77,8 +77,9 @@ public class PlayerManager : Singleton<PlayerManager>
 
     }
 
-    void SaveFeatures()
+    public void SaveFeatures()
     {
+        FData.SaveFeature("NATURE_INITIALIZED", ref Info.NatureInitialized);
         FData.SaveFeature("PROFILE_NAME", ref Info.Profile.Name);
         FData.SaveFeature("PROFILE_AGE", ref Info.Profile.Age);
         FData.SaveFeature("PROFILE_ROLE", ref Info.Profile.Role);
@@ -107,7 +108,10 @@ public class PlayerManager : Singleton<PlayerManager>
         FData.SaveFeature("STATE_SELFCONFIDENCE", ref Info.State.SelfConfidence);
     }
 
-
+    public void ReinitializeGame()
+    {
+        // throw new System.NotImplementedException();
+    }
 
 
 }
@@ -115,6 +119,8 @@ public class PlayerManager : Singleton<PlayerManager>
 [System.Serializable]
 public class PlayerInfo
 {
+    [Tooltip("Zero = No / One = Yes")]
+    public int NatureInitialized = 0;
     public PlayerProfile Profile;
     public PlayerNature Nature;
     public PlayerStats Stats;
@@ -123,10 +129,15 @@ public class PlayerInfo
     [System.Serializable]
     public struct PlayerNature
     {
+        [Range(0, 4)]
         public int PrettyFace;
+        [Range(0, 4)]
         public int DickSize;
+        [Range(0, 4)]
         public int AssEndurance;
+        [Range(0, 4)]
         public int BodyGrowth;
+        [Range(0, 4)]
         public int OralTalent;
     }
 

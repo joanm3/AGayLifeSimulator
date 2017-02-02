@@ -11,4 +11,9 @@ public class ButtonFunctions : MonoBehaviour
         canvas.gameObject.SetActive(!canvas.gameObject.activeInHierarchy);
     }
 
+    public void SetCanvasActiveOrDesactivate(RectTransform transform)
+    {
+        transform.gameObject.SetActive(!transform.gameObject.activeInHierarchy);
+    }
+
 }
