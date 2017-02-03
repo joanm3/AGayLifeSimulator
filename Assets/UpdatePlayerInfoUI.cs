@@ -16,6 +16,7 @@ public class UpdatePlayerInfoUI : MonoBehaviour
         [Tooltip("Use points to separate inheritance. Example: Info.State.Money")]
         public string FieldName;
         public Text UIText;
+        public string text; 
         public bool useTextInstead;
         [Tooltip("be careful to not get out of scope!")]
         public string[] choicesText;
@@ -39,8 +40,8 @@ public class UpdatePlayerInfoUI : MonoBehaviour
             {
 
                 UITextFields[i].UIText.text = (!UITextFields[i].useFieldAsAfterText) ?
-                    UITextFields[i].UIText.text + " " + result.ToString() + " " + UITextFields[i].afterText :
-                    UITextFields[i].UIText.text + " " + result.ToString() + "/" + PlayerManager.Instance.GetPropValue(UITextFields[i].afterText).ToString();
+                    UITextFields[i].text + " " + result.ToString() + " " + UITextFields[i].afterText :
+                    UITextFields[i].text + " " + result.ToString() + "/" + PlayerManager.Instance.GetPropValue(UITextFields[i].afterText).ToString();
             }
             else
             {
@@ -48,8 +49,8 @@ public class UpdatePlayerInfoUI : MonoBehaviour
                 {
                     if (j == (int)result)
                         UITextFields[i].UIText.text = (!UITextFields[i].useFieldAsAfterText) ?
-                            UITextFields[i].UIText.text + " " + UITextFields[i].choicesText[j] + " " + UITextFields[i].afterText :
-                             UITextFields[i].UIText.text + " " + UITextFields[i].choicesText[j] + "/" + PlayerManager.Instance.GetPropValue(UITextFields[i].afterText).ToString();
+                            UITextFields[i].text + " " + UITextFields[i].choicesText[j] + " " + UITextFields[i].afterText :
+                             UITextFields[i].text + " " + UITextFields[i].choicesText[j] + "/" + PlayerManager.Instance.GetPropValue(UITextFields[i].afterText).ToString();
                 }
             }
         }
