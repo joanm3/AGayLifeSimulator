@@ -54,20 +54,20 @@ namespace GayProject.Reflection
 
                 if(type != null)
                 {
-                    Debug.LogFormat("Dans \"{0}\" je cherche \"{1}\"", type.FullName, nameParts[i]);
+                    //Debug.LogFormat("Dans \"{0}\" je cherche \"{1}\"", type.FullName, nameParts[i]);
                     fieldInfo = type.GetField(nameParts[i]);
                     if(i >= nameParts.Length - 1)
                     {
                         continue;
                     }
                     target = fieldInfo.GetValue(target);
-                    Debug.Log(fieldInfo.ToString());
+                    //Debug.Log(fieldInfo.ToString());
                     type = fieldInfo.FieldType;
                 }
             }
-            Debug.Log(fieldInfo.FieldType.FullName);
+            //Debug.Log(fieldInfo.FieldType.FullName);
             fieldInfo.SetValue(target, Convert.ChangeType(value, fieldInfo.FieldType));
-            Debug.Log(fieldInfo.GetValue(target));
+            //Debug.Log(fieldInfo.GetValue(target));
         }
 
     }

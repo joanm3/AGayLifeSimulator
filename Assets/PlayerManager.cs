@@ -118,7 +118,9 @@ public class PlayerManager : Singleton<PlayerManager>
     public void ReinitializeGame()
     {
         Debug.Log("game reinitialized");
-        Info = StartingDefaultPlayerInfo.Clone();
+        Debug.LogFormat("this: {0}, other: {1}", Instance.Info.Profile.Name, Instance.StartingDefaultPlayerInfo.Profile.Name);
+
+        Instance.Info = Instance.StartingDefaultPlayerInfo.Clone();
         if (UIManager.Instance == null)
             UIManager.Init();
         UIManager.Instance.UpdateAllUI();
@@ -137,7 +139,7 @@ public class PlayerInfo
     public int Test = 2;
 
     [System.Serializable]
-    public struct PlayerNature
+    public class PlayerNature
     {
         [Range(0, 4)]
         public int PrettyFace;
@@ -193,7 +195,7 @@ public class PlayerInfo
         [Range(0, 1)]
         [Tooltip("Zero = HIV- / One = HIV+")]
         public int HIVStatus;
-        
+
     }
 
     public PlayerInfo()
@@ -203,16 +205,19 @@ public class PlayerInfo
 
     protected PlayerInfo(PlayerInfo other)
     {
+        this.Profile = new PlayerProfile();
         this.Profile.Name = other.Profile.Name;
         this.Profile.Age = other.Profile.Age;
         this.Profile.Role = other.Profile.Role;
         this.Profile.HIVStatus = other.Profile.HIVStatus;
 
+        this.Nature = new PlayerNature();
         this.Nature.PrettyFace = other.Nature.PrettyFace;
         this.Nature.DickSize = other.Nature.DickSize;
         this.Nature.AssEndurance = other.Nature.AssEndurance;
         this.Nature.OralTalent = other.Nature.OralTalent;
 
+        this.Stats = new PlayerStats();
         this.Stats.BodyFat = other.Stats.BodyFat;
         this.Stats.BodyMuscles = other.Stats.BodyMuscles;
         this.Stats.BodyHair = other.Stats.BodyHair;
@@ -221,6 +226,7 @@ public class PlayerInfo
         this.Stats.SexStamina = other.Stats.SexStamina;
         this.Stats.Sexiness = other.Stats.Sexiness;
 
+        this.State = new PlayerState();
         this.State.SexCount = other.State.SexCount;
         this.State.DaysLeft = other.State.DaysLeft;
         this.State.Money = other.State.Money;

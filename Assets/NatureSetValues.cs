@@ -66,6 +66,7 @@ public class NatureSetValues : MonoBehaviour
             if (PlayerManager.Instance.Info.NatureInitialized == 0)
             {
                 Debug.Log("Playermanager reinitialized to Standard Values");
+                Debug.LogFormat("this: {0}, other: {1}", PlayerManager.Instance.Info.Profile.Name, PlayerManager.Instance.StartingDefaultPlayerInfo.Profile.Name);
                 PlayerManager.Instance.Info = PlayerManager.Instance.StartingDefaultPlayerInfo.Clone();
                 EditProfileCanvas.gameObject.SetActive(true);
                 for (int i = 0; i < HideTransformsBeforeChoosingNature.Length; i++)

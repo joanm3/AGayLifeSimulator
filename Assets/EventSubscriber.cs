@@ -122,7 +122,7 @@ public class GEvent
                     successResults[i].ComputeResult(p);
                 }
             }
-            Debug.Log(successTextKey);
+            //Debug.Log(successTextKey);
         }
         else
         {
@@ -133,7 +133,7 @@ public class GEvent
                     failureResults[i].ComputeResult(p);
                 }
             }
-            Debug.Log(failureTextKey);
+            //Debug.Log(failureTextKey);
         }
     }
 }
@@ -182,7 +182,9 @@ public class GEventResults
 
     public void ComputeResult(PlayerManager p)
     {
-        int actualValue = (int)p.GetFieldValue(param);
+        var actualValue = (int)PlayerManager.Instance.GetFieldValue(param);
+        //Debug.Log(param);
+        //Debug.Log(actualValue);
 
         switch (operation)
         {
@@ -190,7 +192,7 @@ public class GEventResults
                 targetValue = actualValue + value;
                 break;
             case Operation.Substract:
-                targetValue = actualValue + value;
+                targetValue = actualValue - value;
                 break;
             case Operation.Divide:
                 targetValue = actualValue / value;
