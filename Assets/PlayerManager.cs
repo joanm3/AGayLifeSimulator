@@ -176,6 +176,7 @@ public class PlayerInfo
         public int Fatigue;
         public int MaxFatigue;
         public int SelfConfidence;
+        public int WorkBonus; 
     }
 
     [System.Serializable]

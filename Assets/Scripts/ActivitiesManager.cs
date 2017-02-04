@@ -28,6 +28,8 @@ public class ActivitiesManager : MonoBehaviour
         if (OnDate != null) { OnDate(); }
 
         Debug.Log("Day Computed");
+        if (UIManager.Instance == null)
+            UIManager.Init();
         UIManager.Instance.UpdateAllUI();
         Debug.Log("UI Updated");
 

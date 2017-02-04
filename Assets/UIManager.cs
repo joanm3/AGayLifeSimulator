@@ -14,7 +14,6 @@ public class UIManager : Singleton<UIManager>
 
     public void UpdateAllUI()
     {
-        Debug.Log("Updating UI");
         if (UIUpdaters == null || UIUpdaters.Length <= 0)
             UIUpdaters = GameObject.FindObjectsOfType<UpdatePlayerInfoUI>();
 
@@ -22,6 +21,7 @@ public class UIManager : Singleton<UIManager>
         {
             UIUpdaters[i].UpdateUI();
         }
+        Debug.Log("UI Updated");
     }
 
 }

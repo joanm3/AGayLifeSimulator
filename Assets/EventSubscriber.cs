@@ -140,16 +140,26 @@ public class GEvent
 [System.Serializable]
 public class GEventCondition
 {
-    public enum ConditionType { Equals, Not_equals, Bigger_than, Smaller_than }
+    public enum ConditionType { Equals, Not_equals, Bigger_than, Smaller_than, Random }
     public string param;
     public ConditionType condition;
     public int value;
-
+    public bool useParamAsValue = false;
+    public string paramValue;
 
 
     public bool ConditionIsTrue()
     {
-        var actualValue = PlayerManager.Instance.GetFieldValue(param);
+        int actualValue = 0;
+        if (condition != ConditionType.Random)
+        {
+            actualValue = (int)PlayerManager.Instance.GetFieldValue(param);
+        }
+        if (useParamAsValue)
+        {
+            value = (int)PlayerManager.Instance.GetFieldValue(paramValue);
+        }
+
 
         switch (condition)
         {
@@ -161,6 +171,8 @@ public class GEventCondition
                 return ((int)actualValue > this.value);
             case ConditionType.Smaller_than:
                 return ((int)actualValue < this.value);
+            case ConditionType.Random:
+                return value > Random.value * 100;
         }
         return false;
     }
@@ -169,33 +181,45 @@ public class GEventCondition
 [System.Serializable]
 public class GEventResults
 {
-    public enum Operation { Sum, Substract, Divide, Multiply };
+    public enum Operation { Sum, Substract, Divide, Multiply, EqualToValue };
 
     public string param;
     public Operation operation;
     public int value;
+    public bool useParamAsValue = false;
+    public string paramValue;
     public bool biggerThanZero = true;
-
+    public bool useRandomRange = false;
+    public int minRange = 0;
+    public int maxRange = 0;
     private int targetValue;
 
 
     public void ComputeResult()
     {
         var actualValue = (int)PlayerManager.Instance.GetFieldValue(param);
+        if (useParamAsValue)
+        {
+            value = (int)PlayerManager.Instance.GetFieldValue(paramValue);
+        }
+
 
         switch (operation)
         {
             case Operation.Sum:
-                targetValue = actualValue + value;
+                targetValue = (useRandomRange) ? actualValue + Random.Range(minRange, maxRange) : actualValue + value;
                 break;
             case Operation.Substract:
-                targetValue = actualValue - value;
+                targetValue = (useRandomRange) ? actualValue - Random.Range(minRange, maxRange) : actualValue - value;
                 break;
             case Operation.Divide:
-                targetValue = actualValue / value;
+                targetValue = (useRandomRange) ? actualValue / Random.Range(minRange, maxRange) : actualValue / value;
                 break;
             case Operation.Multiply:
-                targetValue = actualValue * value;
+                targetValue = (useRandomRange) ? actualValue * Random.Range(minRange, maxRange) : actualValue * value;
+                break;
+            case Operation.EqualToValue:
+                targetValue = value;
                 break;
         }
 
