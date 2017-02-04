@@ -121,7 +121,7 @@ public class GEvent
                     successResults[i].ComputeResult();
                 }
             }
-            //Debug.Log(successTextKey);
+            Debug.Log("success");
         }
         else
         {
@@ -132,7 +132,7 @@ public class GEvent
                     failureResults[i].ComputeResult();
                 }
             }
-            //Debug.Log(failureTextKey);
+            Debug.Log("failure");
         }
     }
 }
@@ -172,7 +172,9 @@ public class GEventCondition
             case ConditionType.Smaller_than:
                 return ((int)actualValue < this.value);
             case ConditionType.Random:
-                return value > Random.value * 100;
+                Debug.Log("value: " + value + "> random:" + (int)(Random.value * 100f) + "/ condition  is: " + (value > (Random.value * 100)));
+                return (value > (int)(Random.value * 100f));
+
         }
         return false;
     }
