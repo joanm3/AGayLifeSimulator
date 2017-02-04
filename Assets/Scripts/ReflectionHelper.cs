@@ -36,40 +36,38 @@ namespace GayProject.Reflection
             if (nameParts.Length == 1)
             {
                 FieldInfo info = obj.GetType().GetField(propName);
-                Debug.Log("info type: " + info.ToString());
-                Debug.Log("info value: " + info.GetValue(obj).ToString());
+                //Debug.Log("A) info type: " + info.ToString());
+                //Debug.Log("A) info value: " + info.GetValue(obj).ToString());
                 info.SetValue(obj, Convert.ChangeType(value, info.FieldType));
-                Debug.Log("info result: " + info.GetValue(obj).ToString());
+                //Debug.Log("A) info result: " + info.GetValue(obj).ToString());
 
                 return;
             }
 
-            for (int i = 0; i < nameParts.Length; i++)
+            object target = obj;
+            FieldInfo fieldInfo = null;
+            Type type = obj.GetType();
+            for (int i = 0; i < nameParts.Length ; i++)
             {
                 //if (obj == null) { return; }
                 //Debug.Log("part: " + i);
 
-                if (i < nameParts.Length - 1)
+                if(type != null)
                 {
-                    Type type = obj.GetType();
-                    FieldInfo info = type.GetField(nameParts[i]);
-                    //Debug.Log(info.ToString());
-                    //if (info == null) { return; }
-                    obj = info.GetValue(obj);
-                }
-                else
-                {
-                    Type type = obj.GetType();
-                    FieldInfo info = type.GetField(nameParts[i]);
-                    Debug.Log("info type: " + info.ToString());
-                    Debug.Log("info value: " + info.GetValue(obj).ToString());
-
-                    //if (info == null) { return; }
-                    info.SetValue(obj, Convert.ChangeType(value, info.FieldType), BindingFlags.ExactBinding, null, System.Globalization.CultureInfo.CurrentCulture);
-                    Debug.Log("info result: " + info.GetValue(obj).ToString());
-
+                    Debug.LogFormat("Dans \"{0}\" je cherche \"{1}\"", type.FullName, nameParts[i]);
+                    fieldInfo = type.GetField(nameParts[i]);
+                    if(i >= nameParts.Length - 1)
+                    {
+                        continue;
+                    }
+                    target = fieldInfo.GetValue(target);
+                    Debug.Log(fieldInfo.ToString());
+                    type = fieldInfo.FieldType;
                 }
             }
+            Debug.Log(fieldInfo.FieldType.FullName);
+            fieldInfo.SetValue(target, Convert.ChangeType(value, fieldInfo.FieldType));
+            Debug.Log(fieldInfo.GetValue(target));
         }
 
     }

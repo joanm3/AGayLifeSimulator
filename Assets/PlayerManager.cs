@@ -151,7 +151,7 @@ public class PlayerInfo
 
 
     [System.Serializable]
-    public struct PlayerStats
+    public class PlayerStats
     {
         public int BodyFat;
         public int BodyMuscles;
@@ -164,7 +164,7 @@ public class PlayerInfo
     }
 
     [System.Serializable]
-    public struct PlayerState
+    public class PlayerState
     {
         public int SexCount;
         public int DaysLeft;
@@ -177,7 +177,7 @@ public class PlayerInfo
     }
 
     [System.Serializable]
-    public struct PlayerProfile
+    public class PlayerProfile
     {
         public string Name;
         public string Age;
@@ -193,6 +193,7 @@ public class PlayerInfo
         [Range(0, 1)]
         [Tooltip("Zero = HIV- / One = HIV+")]
         public int HIVStatus;
+        
     }
 
     public PlayerInfo()
