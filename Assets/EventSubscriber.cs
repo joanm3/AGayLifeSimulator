@@ -72,10 +72,9 @@ public class EventSubscriber : MonoBehaviour
     }
 
 
-    void PlayEvent(PlayerManager p)
+    void PlayEvent()
     {
-        Activity.ComputeEvent(p);
-        // UIManager.Instance.UpdateAllUI();
+        Activity.ComputeEvent();
     }
 }
 
@@ -93,14 +92,14 @@ public class GEvent
     private bool conditionsTrue = true;
 
 
-    public void ComputeEvent(PlayerManager p)
+    public void ComputeEvent()
     {
         //check if conditions are true
         if (conditions != null && conditions.Length > 0)
         {
             for (int i = 0; i < conditions.Length; i++)
             {
-                if (!conditions[i].ConditionIsTrue(p))
+                if (!conditions[i].ConditionIsTrue())
                 {
                     conditionsTrue = false;
                     break;
@@ -119,7 +118,7 @@ public class GEvent
             {
                 for (int i = 0; i < successResults.Length; i++)
                 {
-                    successResults[i].ComputeResult(p);
+                    successResults[i].ComputeResult();
                 }
             }
             //Debug.Log(successTextKey);
@@ -130,7 +129,7 @@ public class GEvent
             {
                 for (int i = 0; i < failureResults.Length; i++)
                 {
-                    failureResults[i].ComputeResult(p);
+                    failureResults[i].ComputeResult();
                 }
             }
             //Debug.Log(failureTextKey);
@@ -148,9 +147,9 @@ public class GEventCondition
 
 
 
-    public bool ConditionIsTrue(PlayerManager p)
+    public bool ConditionIsTrue()
     {
-        var actualValue = p.GetFieldValue(param);
+        var actualValue = PlayerManager.Instance.GetFieldValue(param);
 
         switch (condition)
         {
@@ -180,11 +179,9 @@ public class GEventResults
     private int targetValue;
 
 
-    public void ComputeResult(PlayerManager p)
+    public void ComputeResult()
     {
         var actualValue = (int)PlayerManager.Instance.GetFieldValue(param);
-        //Debug.Log(param);
-        //Debug.Log(actualValue);
 
         switch (operation)
         {
@@ -205,6 +202,6 @@ public class GEventResults
         if (biggerThanZero && targetValue < 0)
             targetValue = 0;
 
-        p.SetFieldValue(param, targetValue);
+        PlayerManager.Instance.SetFieldValue(param, targetValue);
     }
 }

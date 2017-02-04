@@ -4,32 +4,33 @@ using UnityEngine;
 
 public class ActivitiesManager : MonoBehaviour
 {
-    public delegate void ActivityEventType(PlayerManager g);
+    public delegate void ActivityEventType();
     public static event ActivityEventType OnMorning;
     public static event ActivityEventType OnAfternoon;
     public static event ActivityEventType OnNight;
     public static event ActivityEventType OnDate;
 
 
-    public PlayerManager PlayerManager;
+
 
     public void LaunchDay()
     {
-        if (PlayerManager == null)
+        if (PlayerManager.Instance == null)
         {
-            PlayerManager = PlayerManager.Instance;
-            if (PlayerManager == null)
-            {
-                Debug.LogError("Player Manager not found", this);
-                return;
-            }
+            Debug.LogError("Player Manager not found", this);
+            return;
         }
 
-        if (OnMorning != null) { OnMorning(PlayerManager); }
-        if (OnAfternoon != null) { OnAfternoon(PlayerManager); }
-        if (OnNight != null) { OnNight(PlayerManager); }
+        if (OnMorning != null) { OnMorning(); }
+        if (OnAfternoon != null) { OnAfternoon(); }
+        if (OnNight != null) { OnNight(); }
         //donno if put it here
-        if (OnDate != null) { OnDate(PlayerManager); }
+        if (OnDate != null) { OnDate(); }
+
+        Debug.Log("Day Computed");
+        UIManager.Instance.UpdateAllUI();
+        Debug.Log("UI Updated");
+
     }
 
 
