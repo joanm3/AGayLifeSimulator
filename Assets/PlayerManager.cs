@@ -32,6 +32,7 @@ public class PlayerManager : Singleton<PlayerManager>
 
     public void LoadFeatures()
     {
+        Debug.Log("LoadFeatures called");
         FData.LoadFeature("NATURE_INITIALIZED", ref Info.NatureInitialized);
         FData.LoadFeature("PROFILE_NAME", ref Info.Profile.Name);
         FData.LoadFeature("PROFILE_AGE", ref Info.Profile.Age);
@@ -82,6 +83,8 @@ public class PlayerManager : Singleton<PlayerManager>
 
     public void SaveFeatures()
     {
+        Debug.Log("SaveFeatures called");
+
         FData.SaveFeature("NATURE_INITIALIZED", ref Info.NatureInitialized);
         FData.SaveFeature("PROFILE_NAME", ref Info.Profile.Name);
         FData.SaveFeature("PROFILE_AGE", ref Info.Profile.Age);
@@ -114,6 +117,7 @@ public class PlayerManager : Singleton<PlayerManager>
 
     public void ReinitializeGame()
     {
+        Debug.Log("game reinitialized");
         Info = StartingDefaultPlayerInfo.Clone();
         if (UIManager.Instance == null)
             UIManager.Init();
@@ -149,7 +153,7 @@ public class PlayerInfo
     [System.Serializable]
     public struct PlayerStats
     {
-        public float BodyFat;
+        public int BodyFat;
         public int BodyMuscles;
         [Range(0, 5)]
         public int BodyHair;

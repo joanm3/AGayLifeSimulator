@@ -36,25 +36,41 @@ namespace GayProject.Reflection
             if (nameParts.Length == 1)
             {
                 FieldInfo info = obj.GetType().GetField(propName);
+                Debug.Log("info type: " + info.ToString());
+                Debug.Log("info value: " + info.GetValue(obj).ToString());
                 info.SetValue(obj, Convert.ChangeType(value, info.FieldType));
+                Debug.Log("info result: " + info.GetValue(obj).ToString());
+
+                return;
             }
 
-            foreach (string part in nameParts)
+            for (int i = 0; i < nameParts.Length; i++)
             {
-                if (obj != null)
+                //if (obj == null) { return; }
+                //Debug.Log("part: " + i);
+
+                if (i < nameParts.Length - 1)
                 {
                     Type type = obj.GetType();
-                    //PropertyInfo info = type.GetProperty(part);
-                    FieldInfo info = type.GetField(part);
-                    if (info != null)
-                    {
-                        info.SetValue(obj, Convert.ChangeType(value, info.FieldType));
-                    }
+                    FieldInfo info = type.GetField(nameParts[i]);
+                    //Debug.Log(info.ToString());
+                    //if (info == null) { return; }
+                    obj = info.GetValue(obj);
+                }
+                else
+                {
+                    Type type = obj.GetType();
+                    FieldInfo info = type.GetField(nameParts[i]);
+                    Debug.Log("info type: " + info.ToString());
+                    Debug.Log("info value: " + info.GetValue(obj).ToString());
+
+                    //if (info == null) { return; }
+                    info.SetValue(obj, Convert.ChangeType(value, info.FieldType), BindingFlags.ExactBinding, null, System.Globalization.CultureInfo.CurrentCulture);
+                    Debug.Log("info result: " + info.GetValue(obj).ToString());
+
                 }
             }
         }
-
-
 
     }
 }

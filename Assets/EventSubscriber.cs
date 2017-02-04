@@ -8,8 +8,8 @@ using GayProject.Reflection;
 [RequireComponent(typeof(Toggle))]
 public class EventSubscriber : MonoBehaviour
 {
-
     public EventSchedule Schedule = EventSchedule.Morning;
+    public GEvent Activity;
     public enum EventSchedule { Morning, Afternoon, Evening, Date };
 
     private Toggle toggle;
@@ -74,7 +74,8 @@ public class EventSubscriber : MonoBehaviour
 
     void PlayEvent(PlayerManager p)
     {
-
+        Activity.ComputeEvent(p);
+        // UIManager.Instance.UpdateAllUI();
     }
 }
 
@@ -84,15 +85,15 @@ public class GEvent
     [Tooltip("leave it empty for no conditions")]
     public GEventCondition[] conditions;
     //conditions
-    public string successTextKey;
     public GEventResults[] successResults;
-    public string failureTextKey;
+    public string successTextKey;
     public GEventResults[] failureResults;
+    public string failureTextKey;
 
     private bool conditionsTrue = true;
 
 
-    void ComputeEvent(PlayerManager p)
+    public void ComputeEvent(PlayerManager p)
     {
         //check if conditions are true
         if (conditions != null && conditions.Length > 0)
@@ -121,6 +122,7 @@ public class GEvent
                     successResults[i].ComputeResult(p);
                 }
             }
+            Debug.Log(successTextKey);
         }
         else
         {
@@ -131,6 +133,7 @@ public class GEvent
                     failureResults[i].ComputeResult(p);
                 }
             }
+            Debug.Log(failureTextKey);
         }
     }
 }
