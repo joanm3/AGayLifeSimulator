@@ -35,13 +35,13 @@ public class UpdatePlayerInfoUI : MonoBehaviour
     {
         for (int i = 0; i < UITextFields.Length; i++)
         {
-            var result = PlayerManager.Instance.GetPropValue(UITextFields[i].FieldName);
+            var result = PlayerManager.Instance.GetFieldValue(UITextFields[i].FieldName);
             if (!UITextFields[i].useTextInstead)
             {
 
                 UITextFields[i].UIText.text = (!UITextFields[i].useFieldAsAfterText) ?
                     UITextFields[i].text + " " + result.ToString() + " " + UITextFields[i].afterText :
-                    UITextFields[i].text + " " + result.ToString() + "/" + PlayerManager.Instance.GetPropValue(UITextFields[i].afterText).ToString();
+                    UITextFields[i].text + " " + result.ToString() + "/" + PlayerManager.Instance.GetFieldValue(UITextFields[i].afterText).ToString();
             }
             else
             {
@@ -50,7 +50,7 @@ public class UpdatePlayerInfoUI : MonoBehaviour
                     if (j == (int)result)
                         UITextFields[i].UIText.text = (!UITextFields[i].useFieldAsAfterText) ?
                             UITextFields[i].text + " " + UITextFields[i].choicesText[j] + " " + UITextFields[i].afterText :
-                             UITextFields[i].text + " " + UITextFields[i].choicesText[j] + "/" + PlayerManager.Instance.GetPropValue(UITextFields[i].afterText).ToString();
+                             UITextFields[i].text + " " + UITextFields[i].choicesText[j] + "/" + PlayerManager.Instance.GetFieldValue(UITextFields[i].afterText).ToString();
                 }
             }
         }

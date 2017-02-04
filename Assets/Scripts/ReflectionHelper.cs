@@ -8,7 +8,7 @@ namespace GayProject.Reflection
 {
     public static class ReflectionHelper
     {
-        public static object GetPropValue(this object obj, string propName)
+        public static object GetFieldValue(this object obj, string propName)
         {
             string[] nameParts = propName.Split('.');
             if (nameParts.Length == 1)
@@ -29,5 +29,32 @@ namespace GayProject.Reflection
             }
             return obj;
         }
+
+        public static void SetFieldValue(this object obj, string propName, object value)
+        {
+            string[] nameParts = propName.Split('.');
+            if (nameParts.Length == 1)
+            {
+                FieldInfo info = obj.GetType().GetField(propName);
+                info.SetValue(obj, Convert.ChangeType(value, info.FieldType));
+            }
+
+            foreach (string part in nameParts)
+            {
+                if (obj != null)
+                {
+                    Type type = obj.GetType();
+                    //PropertyInfo info = type.GetProperty(part);
+                    FieldInfo info = type.GetField(part);
+                    if (info != null)
+                    {
+                        info.SetValue(obj, Convert.ChangeType(value, info.FieldType));
+                    }
+                }
+            }
+        }
+
+
+
     }
 }
