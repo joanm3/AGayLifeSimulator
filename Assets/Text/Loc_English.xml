@@ -26,18 +26,18 @@
   <text key="P_DICK_SIZE_04">XL</text>
 
   <text key="P_ASS_ENDURANCE">Ass Endurance: </text>
-  <text key="P_ASS_ENDURANCE_00">Options</text>
-  <text key="P_ASS_ENDURANCE_01">Options</text>
-  <text key="P_ASS_ENDURANCE_02">Options</text>
-  <text key="P_ASS_ENDURANCE_03">Options</text>
-  <text key="P_ASS_ENDURANCE_04">Options</text>
+  <text key="P_ASS_ENDURANCE_00">Pandora's cage</text>
+  <text key="P_ASS_ENDURANCE_01">painful</text>
+  <text key="P_ASS_ENDURANCE_02">lub needer</text>
+  <text key="P_ASS_ENDURANCE_03">gimme more</text>
+  <text key="P_ASS_ENDURANCE_04">man pussy</text>
 
   <text key="P_ORAL_TALENT">Oral Talent: </text>
-  <text key="P_ORAL_TALENT_00">Quit</text>
-  <text key="P_ORAL_TALENT_01">Quit</text>
-  <text key="P_ORAL_TALENT_02">Quit</text>
-  <text key="P_ORAL_TALENT_03">Quit</text>
-  <text key="P_ORAL_TALENT_04">Quit</text>
+  <text key="P_ORAL_TALENT_00">argh...</text>
+  <text key="P_ORAL_TALENT_01">teethed</text>
+  <text key="P_ORAL_TALENT_02">licker</text>
+  <text key="P_ORAL_TALENT_03">deep throat</text>
+  <text key="P_ORAL_TALENT_04">trouty mouth</text>
 
   <text key="P_STATS">Stats</text>
   <text key="P_BODY_FAT">Body Fat: </text>
@@ -125,9 +125,16 @@
   <text key="P_BEARD_COLOR_03">Start New Game</text>
   <text key="P_BEARD_COLOR_04">Start New Game</text>
 
+  <text key="P_NAME">Name</text>
+  <text key="P_AGE">Age</text>
+  <text key="P_ROLE">Role</text>
+  <text key="P_NAME_ENTER_TEXT">Enter profile name...</text>
+  <text key="P_AGE_ENTER_TEXT">Enter profile age...</text>
+
+
    <!-- Buttons -->
   <text key="B_EDIT_PROFILE">Edit Profile</text> 
-  <text key="B_LAUNCH">Launch Day</text> 
+  <text key="B_LAUNCH_DAY">Launch Day</text> 
   <text key="B_CONFIRM">Confirm</text>   
   <text key="B_CANCEL">Cancel</text>   
   <text key="B_RESET_GAME">Reset Game</text>   
@@ -135,31 +142,31 @@
   <text key="B_GYM">Go to CMG</text>
   <text key="B_GYM_STRENGTH">Strenght Program: 50€</text>
   <text key="B_GYM_FITNESS">Fitness: 50€</text>
-  <text key="B_GYM_POLEDANCE">Pole Dance: 100€</text>
-  <text key="B_GYM_CROSSFIT">CrossFit: 120€</text>
+  <text key="B_GYM_POLE_DANCE">Pole Dance: 100€</text>
+  <text key="B_GYM_CROSS_FIT">CrossFit: 120€</text>
 
   <text key="B_SAUNA">Go to Suncity Sauna</text>
   <text key="B_SAUNA_RELAX">Relax: 50€</text>
-  <text key="B_SAUNA_DARKROOM">Visit Darkroom: 50€</text>
+  <text key="B_SAUNA_DARK_ROOM">Visit Darkroom: 50€</text>
 
   <text key="B_WORK">Go to Work</text>
   <text key="B_WORK_HARD">Work Hard</text>
   <text key="B_WORK_MUSIC">Listen to Fifth Harmony</text>
   <text key="B_WORK_RAISE">Ask for a Raise</text>
 
-  <text key="B_LEMARAIS">Visit le Marais</text>
-  <text key="B_LEMARAIS_SHOPPING">Go Shopping</text>
-  <text key="B_LEMARAIS_MUSEUM">Pompidou Museum: 20€</text>
-  <text key="B_LEMARAIS_BEAUTY">Beauty Traitment: 100€</text>
-  <text key="B_LEMARAIS_TATTOO">Get a Tattoo: 500€</text>
+  <text key="B_LE_MARAIS">Visit le Marais</text>
+  <text key="B_LE_MARAIS_SHOPPING">Go Shopping</text>
+  <text key="B_LE_MARAIS_MUSEUM">Pompidou Museum: 20€</text>
+  <text key="B_LE_MARAIS_BEAUTY">Beauty Traitment: 100€</text>
+  <text key="B_LE_MARAIS_TATTOO">Get a Tattoo: 500€</text>
 
   <text key="B_VIDEOGAMES">Play Videogames</text>
-  <text key="B_VIDEOGAMES_THEWITNESS">Play The Witness</text>
-  <text key="B_VIDEOGAMES_THESIMS">Play The Sims</text>
-  <text key="B_VIDEOGAMES_DARKSOULS">Play Dark Souls</text>
+  <text key="B_VIDEOGAMES_THE_WITNESS">Play The Witness</text>
+  <text key="B_VIDEOGAMES_THE_SIMS">Play The Sims</text>
+  <text key="B_VIDEOGAMES_DARK_SOULS">Play Dark Souls</text>
 
   <text key="B_DOCTOR">Visit the Doctor</text>
-  <text key="B_DOCTOR_BLOODTEST">Do blood test</text>
+  <text key="B_DOCTOR_BLOOD_TEST">Do blood test</text>
   <text key="B_DOCTOR_PSICOTHERAPIST">Psychologist: 80€</text>
   <text key="B_DOCTOR_MASSAGE">Get a massage</text>
 
@@ -173,8 +180,19 @@
 
 
      <!-- Misc -->
+  <text key=""> </text>
+  <text key="EUROS">€</text>
+  <text key="EUROS_TURN">€/turn</text>
+
   <text key="MORNING">Morning</text>
   <text key="AFTERNOON">Afternoon</text>
   <text key="EVENING">Evening</text>
+  <text key="SELECT_NATURE">Select your nature</text>
+  <text key="POINTS_USED">Points Used: </text>
+  <text key="POINTS_USED_NOTE">(You won't be able to change this later, so choose wisely!)</text>
+  <text key="CONFIRM_MAX_POINTS_TRUE">You won't be able to change the nature in the future. Are you sure you want to confirm? </text>
+  <text key="CONFIRM_MAX_POINTS_FALSE">You haven't used all your points. You won't be able to change the nature in the future, so you will play in disadvantage. Are you sure you want to confirm?</text>
+
+
 
 </Language>

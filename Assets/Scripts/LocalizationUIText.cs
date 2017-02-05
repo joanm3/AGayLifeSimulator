@@ -8,12 +8,12 @@ public class LocalizationUIText : MonoBehaviour
 
     void Start()
     {
-        ReloadLocalText();
+        //ReloadLocalText();
     }
 
     void OnEnable()
     {
-        ReloadLocalText();
+        //ReloadLocalText();
         LocalizationManager.Reload += ReloadLocalText;
     }
 

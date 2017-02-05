@@ -1,4 +1,5 @@
 ﻿using GayProject.Reflection;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +17,7 @@ public class UpdatePlayerInfoUI : MonoBehaviour
         [Tooltip("Use points to separate inheritance. Example: Info.State.Money")]
         public string FieldName;
         public Text UIText;
-        public string text; 
+        public string text;
         public bool useTextInstead;
         [Tooltip("be careful to not get out of scope!")]
         public string[] choicesText;
@@ -26,9 +27,23 @@ public class UpdatePlayerInfoUI : MonoBehaviour
     }
 
 
-    public void Start()
+    IEnumerator Start()
     {
+        while (!LocalizationManager.Instance.IsReady)
+        {
+            yield return null;
+        }
         UpdateUI();
+    }
+
+    void OnEnable()
+    {
+        LocalizationManager.Reload += UpdateUI;
+    }
+
+    void OnDisable()
+    {
+        LocalizationManager.Reload -= UpdateUI;
     }
 
     public void UpdateUI()
@@ -40,8 +55,8 @@ public class UpdatePlayerInfoUI : MonoBehaviour
             {
 
                 UITextFields[i].UIText.text = (!UITextFields[i].useFieldAsAfterText) ?
-                    UITextFields[i].text + " " + result.ToString() + " " + UITextFields[i].afterText :
-                    UITextFields[i].text + " " + result.ToString() + "/" + PlayerManager.Instance.GetFieldValue(UITextFields[i].afterText).ToString();
+                    LocalizationManager.Instance.GetText(UITextFields[i].text) + " " + result.ToString() + " " + LocalizationManager.Instance.GetText(UITextFields[i].afterText) :
+                    LocalizationManager.Instance.GetText(UITextFields[i].text) + " " + result.ToString() + "/" + PlayerManager.Instance.GetFieldValue(UITextFields[i].afterText).ToString();
             }
             else
             {
@@ -49,8 +64,8 @@ public class UpdatePlayerInfoUI : MonoBehaviour
                 {
                     if (j == (int)result)
                         UITextFields[i].UIText.text = (!UITextFields[i].useFieldAsAfterText) ?
-                            UITextFields[i].text + " " + UITextFields[i].choicesText[j] + " " + UITextFields[i].afterText :
-                             UITextFields[i].text + " " + UITextFields[i].choicesText[j] + "/" + PlayerManager.Instance.GetFieldValue(UITextFields[i].afterText).ToString();
+                            LocalizationManager.Instance.GetText(UITextFields[i].text) + " " + LocalizationManager.Instance.GetText(UITextFields[i].choicesText[j]) + " " + LocalizationManager.Instance.GetText(UITextFields[i].afterText) :
+                            LocalizationManager.Instance.GetText(UITextFields[i].text) + " " + LocalizationManager.Instance.GetText(UITextFields[i].choicesText[j]) + "/" + PlayerManager.Instance.GetFieldValue(UITextFields[i].afterText).ToString();
                 }
             }
         }

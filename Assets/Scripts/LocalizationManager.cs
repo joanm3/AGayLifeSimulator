@@ -17,11 +17,13 @@ public class LocalizationManager : Singleton<LocalizationManager>
     public delegate void ReloadText();
     public static event ReloadText Reload;
 
+    public bool IsReady = false;
+
 
     override protected void OnAwake()
     {
         base.OnAwake();
-
+        IsReady = false;
         foreach (TextAsset languageFile in languageFiles)
         {
             XDocument languageXMLData = XDocument.Parse(languageFile.text);
@@ -37,6 +39,8 @@ public class LocalizationManager : Singleton<LocalizationManager>
             }
             languages.Add(language);
         }
+        IsReady = true;
+        SetLanguageAndReload(currentLanguageID);
 
     }
 
@@ -62,7 +66,7 @@ public class LocalizationManager : Singleton<LocalizationManager>
     public void SetLanguageAndReload(int languageID)
     {
         currentLanguageID = languageID;
-        Reload(); 
+        Reload();
     }
 
 

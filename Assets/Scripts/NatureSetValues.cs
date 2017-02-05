@@ -144,10 +144,11 @@ public class NatureSetValues : MonoBehaviour
 
     void UpdateNatureUI(ref NatureValues nature)
     {
-        PointsAvailableText.text = PointsUsedString + PointsGiven.ToString() + "/" + MaxPoints.ToString();
+        PointsAvailableText.text = LocalizationManager.Instance.GetText(PointsUsedString) + PointsGiven.ToString() + "/" + MaxPoints.ToString();
         nature.valueText.text = nature.value.ToString() + "/" + nature.maxValue.ToString();
-        nature.sliderInsideText.text = nature.sliderChoicesText[nature.value].ToString();
-        ConfirmText.text = (PointsGiven >= MaxPoints) ? ConfirmTextWithMaxPoints : ConfirmTextWithoutMaxPoints;
+        nature.sliderInsideText.text = LocalizationManager.Instance.GetText(nature.sliderChoicesText[nature.value]);
+        ConfirmText.text = (PointsGiven >= MaxPoints) ? LocalizationManager.Instance.GetText(ConfirmTextWithMaxPoints) :
+                                                        LocalizationManager.Instance.GetText(ConfirmTextWithoutMaxPoints);
     }
 
     void OnConfirmButtonClick()
