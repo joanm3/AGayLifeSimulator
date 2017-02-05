@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using GayProject.DataManagement;
 
+
 public class ProfileInformationSetter : MonoBehaviour
 {
     public Text profileName;
@@ -37,10 +38,6 @@ public class ProfileInformationSetter : MonoBehaviour
             if (FeaturesManager.Instance.features[i].ID == "Role")
             {
                 PlayerManager.Instance.Info.Profile.Role = FeaturesManager.Instance.features[i].currIndex;
-            }
-            else
-            {
-                Debug.LogError("not found the Role ID in FeaturesManager list of features. \nMake sure a Role feature with the ID == Role exists", FeaturesManager.Instance);
             }
         }
     }

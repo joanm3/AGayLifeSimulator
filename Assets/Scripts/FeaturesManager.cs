@@ -132,7 +132,12 @@ public class Feature
 
         if (UIText != null)
         {
-            UIText.text = choices[currIndex].text;
+            while (!LocalizationManager.Instance.IsReady)
+            {
+                Debug.Log("localization manager not ready to load features");
+            }
+
+            UIText.text = LocalizationManager.Instance.GetText(choices[currIndex].text);
         }
     }
 

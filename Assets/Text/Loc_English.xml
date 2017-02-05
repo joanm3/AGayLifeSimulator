@@ -63,67 +63,66 @@
   <text key="P_DAYS_LEFT">Days 'till Circuit: </text>
 
   <text key="P_FACE">Face</text>
-  <text key="P_FACE_00">Start New Game</text>
-  <text key="P_FACE_01">Start New Game</text>
-  <text key="P_FACE_02">Start New Game</text>
-  <text key="P_FACE_03">Start New Game</text>
-  <text key="P_FACE_04">Start New Game</text>
+  <text key="P_FACE_01">Squarred</text>
+  <text key="P_FACE_02">Long</text>
+  <text key="P_FACE_03">Rounded</text>
+  <text key="P_FACE_04">Fluffy</text>
+
 
   <text key="P_FACE_COLOR">Face Color</text>
-  <text key="P_FACE_COLOR_00">Start New Game</text>
-  <text key="P_FACE_COLOR_01">Start New Game</text>
-  <text key="P_FACE_COLOR_02">Start New Game</text>
-  <text key="P_FACE_COLOR_03">Start New Game</text>
-  <text key="P_FACE_COLOR_04">Start New Game</text>
+  <text key="P_FACE_COLOR_01">Black</text>
+  <text key="P_FACE_COLOR_02">White</text>
+  <text key="P_FACE_COLOR_03">Donald Trump</text>
+  <text key="P_FACE_COLOR_04">Miss Martian</text>
 
   <text key="P_HAIR">Hair</text>
-  <text key="P_HAIR_00">Start New Game</text>
-  <text key="P_HAIR_01">Start New Game</text>
-  <text key="P_HAIR_02">Start New Game</text>
-  <text key="P_HAIR_03">Start New Game</text>
-  <text key="P_HAIR_04">Start New Game</text>
+  <text key="P_HAIR_01">Intellectual</text>
+  <text key="P_HAIR_02">Almost Modern</text>
+  <text key="P_HAIR_03">Son Goku</text>
+  <text key="P_HAIR_04">70s</text>
+  <text key="P_HAIR_05">Bold</text>
 
   <text key="P_HAIR_COLOR">Hair Color</text>
-  <text key="P_HAIR_COLOR_00">Start New Game</text>
-  <text key="P_HAIR_COLOR_01">Start New Game</text>
-  <text key="P_HAIR_COLOR_02">Start New Game</text>
-  <text key="P_HAIR_COLOR_03">Start New Game</text>
-  <text key="P_HAIR_COLOR_04">Start New Game</text>
+  <text key="P_HAIR_COLOR_01">Diva Golden</text>
+  <text key="P_HAIR_COLOR_02">Brown</text>
+  <text key="P_HAIR_COLOR_03">Dark</text>
+  <text key="P_HAIR_COLOR_04">Ginger</text>
+  <text key="P_HAIR_COLOR_05">White</text>
+  <text key="P_HAIR_COLOR_06">Pinky Gloss</text>
 
   <text key="P_EYES">Eyes</text>
-  <text key="P_EYES_00">Start New Game</text>
-  <text key="P_EYES_01">Start New Game</text>
-  <text key="P_EYES_02">Start New Game</text>
-  <text key="P_EYES_03">Start New Game</text>
-  <text key="P_EYES_04">Start New Game</text>
+  <text key="P_EYES_01">Posh</text>
+  <text key="P_EYES_02">Without Studies</text>
+  <text key="P_EYES_03">Worried</text>
+  <text key="P_EYES_04">Bro Like</text>
+  <text key="P_EYES_05">I don't care</text>
 
   <text key="P_MOUTH">Mouth</text>
-  <text key="P_MOUTH_00">Start New Game</text>
-  <text key="P_MOUTH_01">Start New Game</text>
-  <text key="P_MOUTH_02">Start New Game</text>
-  <text key="P_MOUTH_03">Start New Game</text>
-  <text key="P_MOUTH_04">Start New Game</text>
+  <text key="P_MOUTH_01">Arrogant</text>
+  <text key="P_MOUTH_02">Indiferent</text>
+  <text key="P_MOUTH_03">Drag Queen</text>
+  <text key="P_MOUTH_04">Troutty</text>
 
   <text key="P_NOSE">Nose</text>
-  <text key="P_NOSE_00">Start New Game</text>
-  <text key="P_NOSE_01">Start New Game</text>
-  <text key="P_NOSE_02">Start New Game</text>
-  <text key="P_NOSE_03">Start New Game</text>
-  <text key="P_NOSE_04">Start New Game</text>
+  <text key="P_NOSE_01">An Arrow</text>
+  <text key="P_NOSE_02">Sharp</text>
+  <text key="P_NOSE_03">Rounded</text>
+  <text key="P_NOSE_04">Loose</text>
 
   <text key="P_BEARD">Beard</text>
-  <text key="P_BEARD_00">Start New Game</text>
-  <text key="P_BEARD_01">Start New Game</text>
-  <text key="P_BEARD_02">Start New Game</text>
-  <text key="P_BEARD_03">Start New Game</text>
-  <text key="P_BEARD_04">Start New Game</text>
+  <text key="P_BEARD_01">Twink</text>
+  <text key="P_BEARD_02">Playground</text>
+  <text key="P_BEARD_03">Circle of Life</text>
+  <text key="P_BEARD_04">Hippster</text>
+
 
   <text key="P_BEARD_COLOR">Beard Color</text>
-  <text key="P_BEARD_COLOR_00">Start New Game</text>
-  <text key="P_BEARD_COLOR_01">Start New Game</text>
-  <text key="P_BEARD_COLOR_02">Start New Game</text>
-  <text key="P_BEARD_COLOR_03">Start New Game</text>
-  <text key="P_BEARD_COLOR_04">Start New Game</text>
+  <text key="P_BEARD_COLOR_01">Diva Golden</text>
+  <text key="P_BEARD_COLOR_02">Brown</text>
+  <text key="P_BEARD_COLOR_03">Dark</text>
+  <text key="P_BEARD_COLOR_04">Ginger</text>
+  <text key="P_BEARD_COLOR_05">White</text>
+  <text key="P_BEARD_COLOR_06">Pinky Gloss</text>
 
   <text key="P_NAME">Name</text>
   <text key="P_AGE">Age</text>
@@ -133,6 +132,9 @@
 
 
    <!-- Buttons -->
+  <text key="BTTM">bttm</text> 
+  <text key="TOP">top</text> 
+  <text key="VERS">vers</text>  
   <text key="B_EDIT_PROFILE">Edit Profile</text> 
   <text key="B_LAUNCH_DAY">Launch Day</text> 
   <text key="B_CONFIRM">Confirm</text>   
