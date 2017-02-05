@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language LANG="english" ID="0">
+
+  <!-- Main Menu -->
+  <text key="MAIN_TITLE">A Gay Life Simulator</text>
+  <text key="MAIN_CONTINUE">Continue</text>
+  <text key="MAIN_START_NEW_GAME">Start New Game</text>
+  <text key="MAIN_CONTINUE">Continue</text>
+  <text key="MAIN_OPTIONS">Options</text>
+  <text key="MAIN_QUIT">Quit</text>
+
+   <!-- Player -->
+  <text key="P_NATURE">Nature</text>
+  <text key="P_PRETTY_FACE">Pretty Face: </text>
+  <text key="P_PRETTY_FACE_00">Shrek</text>
+  <text key="P_PRETTY_FACE_01">Steve Buscemi</text>
+  <text key="P_PRETTY_FACE_02">Average</text>
+  <text key="P_PRETTY_FACE_03">Sexy</text>
+  <text key="P_PRETTY_FACE_04">Channing Tatum</text>
+
+  <text key="P_DICK_SIZE">Dick Size: </text>
+  <text key="P_DICK_SIZE_00">XS</text>
+  <text key="P_DICK_SIZE_01">S</text>
+  <text key="P_DICK_SIZE_02">M</text>
+  <text key="P_DICK_SIZE_03">L</text>
+  <text key="P_DICK_SIZE_04">XL</text>
+
+  <text key="P_ASS_ENDURANCE">Ass Endurance: </text>
+  <text key="P_ASS_ENDURANCE_00">Options</text>
+  <text key="P_ASS_ENDURANCE_01">Options</text>
+  <text key="P_ASS_ENDURANCE_02">Options</text>
+  <text key="P_ASS_ENDURANCE_03">Options</text>
+  <text key="P_ASS_ENDURANCE_04">Options</text>
+
+  <text key="P_ORAL_TALENT">Oral Talent: </text>
+  <text key="P_ORAL_TALENT_00">Quit</text>
+  <text key="P_ORAL_TALENT_01">Quit</text>
+  <text key="P_ORAL_TALENT_02">Quit</text>
+  <text key="P_ORAL_TALENT_03">Quit</text>
+  <text key="P_ORAL_TALENT_04">Quit</text>
+
+  <text key="P_STATS">Stats</text>
+  <text key="P_BODY_FAT">Body Fat: </text>
+  <text key="P_BODY_MUSCLES">Body Muscles: </text>
+
+  <text key="P_BODY_HAIR">Body Hair: </text>
+  <text key="P_BODY_HAIR_00">Smooth</text>
+  <text key="P_BODY_HAIR_01">Shaved</text>
+  <text key="P_BODY_HAIR_02">Some Hair</text>
+  <text key="P_BODY_HAIR_03">Hairy</text>
+  <text key="P_BODY_HAIR_04">Cousin Itt</text>
+
+  <text key="P_SYMPATHY">Sympathy: </text>
+  <text key="P_INTELLIGENCE">Intelligence: </text>
+  <text key="P_SEX_STAMINA">Sex Stamina: </text>
+  <text key="P_SEXINESS">Sexiness: </text>
+  <text key="P_STATE">State</text>
+  <text key="P_SALARY">Salary: </text>
+  <text key="P_FATIGUE">Fatigue: </text>
+  <text key="P_SELF_CONFIDENCE">Self Confidence: </text>
+  <text key="P_MONEY">Money: </text>
+  <text key="P_SEX_COUNT">Sex Count: </text>
+  <text key="P_DAYS_LEFT">Days 'till Circuit: </text>
+
+  <text key="P_FACE">Face</text>
+  <text key="P_FACE_00">Start New Game</text>
+  <text key="P_FACE_01">Start New Game</text>
+  <text key="P_FACE_02">Start New Game</text>
+  <text key="P_FACE_03">Start New Game</text>
+  <text key="P_FACE_04">Start New Game</text>
+
+  <text key="P_FACE_COLOR">Face Color</text>
+  <text key="P_FACE_COLOR_00">Start New Game</text>
+  <text key="P_FACE_COLOR_01">Start New Game</text>
+  <text key="P_FACE_COLOR_02">Start New Game</text>
+  <text key="P_FACE_COLOR_03">Start New Game</text>
+  <text key="P_FACE_COLOR_04">Start New Game</text>
+
+  <text key="P_HAIR">Hair</text>
+  <text key="P_HAIR_00">Start New Game</text>
+  <text key="P_HAIR_01">Start New Game</text>
+  <text key="P_HAIR_02">Start New Game</text>
+  <text key="P_HAIR_03">Start New Game</text>
+  <text key="P_HAIR_04">Start New Game</text>
+
+  <text key="P_HAIR_COLOR">Hair Color</text>
+  <text key="P_HAIR_COLOR_00">Start New Game</text>
+  <text key="P_HAIR_COLOR_01">Start New Game</text>
+  <text key="P_HAIR_COLOR_02">Start New Game</text>
+  <text key="P_HAIR_COLOR_03">Start New Game</text>
+  <text key="P_HAIR_COLOR_04">Start New Game</text>
+
+  <text key="P_EYES">Eyes</text>
+  <text key="P_EYES_00">Start New Game</text>
+  <text key="P_EYES_01">Start New Game</text>
+  <text key="P_EYES_02">Start New Game</text>
+  <text key="P_EYES_03">Start New Game</text>
+  <text key="P_EYES_04">Start New Game</text>
+
+  <text key="P_MOUTH">Mouth</text>
+  <text key="P_MOUTH_00">Start New Game</text>
+  <text key="P_MOUTH_01">Start New Game</text>
+  <text key="P_MOUTH_02">Start New Game</text>
+  <text key="P_MOUTH_03">Start New Game</text>
+  <text key="P_MOUTH_04">Start New Game</text>
+
+  <text key="P_NOSE">Nose</text>
+  <text key="P_NOSE_00">Start New Game</text>
+  <text key="P_NOSE_01">Start New Game</text>
+  <text key="P_NOSE_02">Start New Game</text>
+  <text key="P_NOSE_03">Start New Game</text>
+  <text key="P_NOSE_04">Start New Game</text>
+
+  <text key="P_BEARD">Beard</text>
+  <text key="P_BEARD_00">Start New Game</text>
+  <text key="P_BEARD_01">Start New Game</text>
+  <text key="P_BEARD_02">Start New Game</text>
+  <text key="P_BEARD_03">Start New Game</text>
+  <text key="P_BEARD_04">Start New Game</text>
+
+  <text key="P_BEARD_COLOR">Beard Color</text>
+  <text key="P_BEARD_COLOR_00">Start New Game</text>
+  <text key="P_BEARD_COLOR_01">Start New Game</text>
+  <text key="P_BEARD_COLOR_02">Start New Game</text>
+  <text key="P_BEARD_COLOR_03">Start New Game</text>
+  <text key="P_BEARD_COLOR_04">Start New Game</text>
+
+   <!-- Buttons -->
+  <text key="B_EDIT_PROFILE">Edit Profile</text> 
+  <text key="B_LAUNCH">Launch Day</text> 
+  <text key="B_CONFIRM">Confirm</text>   
+  <text key="B_CANCEL">Cancel</text>   
+  <text key="B_RESET_GAME">Reset Game</text>   
+
+  <text key="B_GYM">Go to CMG</text>
+  <text key="B_GYM_STRENGTH">Strenght Program: 50€</text>
+  <text key="B_GYM_FITNESS">Fitness: 50€</text>
+  <text key="B_GYM_POLEDANCE">Pole Dance: 100€</text>
+  <text key="B_GYM_CROSSFIT">CrossFit: 120€</text>
+
+  <text key="B_SAUNA">Go to Suncity Sauna</text>
+  <text key="B_SAUNA_RELAX">Relax: 50€</text>
+  <text key="B_SAUNA_DARKROOM">Visit Darkroom: 50€</text>
+
+  <text key="B_WORK">Go to Work</text>
+  <text key="B_WORK_HARD">Work Hard</text>
+  <text key="B_WORK_MUSIC">Listen to Fifth Harmony</text>
+  <text key="B_WORK_RAISE">Ask for a Raise</text>
+
+  <text key="B_LEMARAIS">Visit le Marais</text>
+  <text key="B_LEMARAIS_SHOPPING">Go Shopping</text>
+  <text key="B_LEMARAIS_MUSEUM">Pompidou Museum: 20€</text>
+  <text key="B_LEMARAIS_BEAUTY">Beauty Traitment: 100€</text>
+  <text key="B_LEMARAIS_TATTOO">Get a Tattoo: 500€</text>
+
+  <text key="B_VIDEOGAMES">Play Videogames</text>
+  <text key="B_VIDEOGAMES_THEWITNESS">Play The Witness</text>
+  <text key="B_VIDEOGAMES_THESIMS">Play The Sims</text>
+  <text key="B_VIDEOGAMES_DARKSOULS">Play Dark Souls</text>
+
+  <text key="B_DOCTOR">Visit the Doctor</text>
+  <text key="B_DOCTOR_BLOODTEST">Do blood test</text>
+  <text key="B_DOCTOR_PSICOTHERAPIST">Psychologist: 80€</text>
+  <text key="B_DOCTOR_MASSAGE">Get a massage</text>
+
+  <text key="B_PARTY">Go Partying</text>
+  <text key="B_SHAVE">Shave</text>
+  <text key="B_GLEE">Watch Glee Episode</text>
+  <text key="B_PORN">Watch Porn</text>
+
+     <!-- Tips -->
+  <text key="T_INFORMATION">Information</text>
+
+
+     <!-- Misc -->
+  <text key="MORNING">Morning</text>
+  <text key="AFTERNOON">Afternoon</text>
+  <text key="EVENING">Evening</text>
+
+</Language>

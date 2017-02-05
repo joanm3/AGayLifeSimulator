@@ -31,7 +31,7 @@ public class ActivitiesManager : MonoBehaviour
         if (UIManager.Instance == null)
             UIManager.Init();
         UIManager.Instance.UpdateAllUI();
-        Debug.Log("UI Updated");
+
 
     }
 
