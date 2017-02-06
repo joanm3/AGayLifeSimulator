@@ -6,11 +6,23 @@ using UnityEngine.SceneManagement;
 public class LoadSceneWhenReady : MonoBehaviour
 {
 
+    public bool locReady = false;
+    public bool loadLevel = false;
+
+    void Awake()
+    {
+        loadLevel = false;
+        locReady = false;
+    }
+
     void Update()
     {
         if (LocalizationManager.Instance != null)
             if (LocalizationManager.Instance.IsReady)
-                SceneManager.LoadScene("Main");
+                locReady = true;
+
+        if (locReady && loadLevel)
+            SceneManager.LoadScene("Main");
     }
 
 }
