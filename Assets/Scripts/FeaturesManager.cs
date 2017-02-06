@@ -130,14 +130,14 @@ public class Feature
 
         }
 
+        //CHANGE CHANGE CHANGE
         if (UIText != null)
         {
-            while (!LocalizationManager.Instance.IsReady)
-            {
-                Debug.Log("localization manager not ready to load features");
-            }
-
-            UIText.text = LocalizationManager.Instance.GetText(choices[currIndex].text);
+            if (Application.isPlaying)
+                if (LocalizationManager.Instance.IsReady)
+                {
+                    UIText.text = LocalizationManager.Instance.GetText(choices[currIndex].text);
+                }
         }
     }
 

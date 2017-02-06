@@ -18,6 +18,7 @@ public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
             if (parent != null)
                 Instance.gameObject.transform.SetParent(parent, false);
             Instance.gameObject.name = typeof(T).Name;
+            DontDestroyOnLoad(Instance.gameObject);
             Debug.Log(Instance.gameObject.name + " initialised", Instance.gameObject);
         }
     }
@@ -26,7 +27,7 @@ public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         if (Instance != null && Instance != this)
         {
-            Debug.LogError("two instances of singleton detected. Deleting one", this.gameObject);
+            Debug.LogError("two instances of singleton detected. Deleting this: " + Instance.gameObject.name, this.gameObject);
             Destroy(gameObject);
         }
         else

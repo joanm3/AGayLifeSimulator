@@ -38,12 +38,12 @@ public class UpdatePlayerInfoUI : MonoBehaviour
 
     void OnEnable()
     {
-        LocalizationManager.Reload += UpdateUI;
+        LocalizationManager.ReloadLocalization += UpdateUI;
     }
 
     void OnDisable()
     {
-        LocalizationManager.Reload -= UpdateUI;
+        LocalizationManager.ReloadLocalization -= UpdateUI;
     }
 
     public void UpdateUI()

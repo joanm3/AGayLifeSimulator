@@ -122,7 +122,8 @@ public class NatureSetValues : MonoBehaviour
         {
             nature.value--;
             PointsGiven--;
-            UpdateNatureUI(ref nature);
+            if (LocalizationManager.Instance.IsReady) { UpdateNatureUI(ref nature); }
+
         }
     }
 
@@ -137,7 +138,7 @@ public class NatureSetValues : MonoBehaviour
         {
             nature.value++;
             PointsGiven++;
-            UpdateNatureUI(ref nature);
+            if (LocalizationManager.Instance.IsReady) { UpdateNatureUI(ref nature); }
         }
 
     }

@@ -9,16 +9,50 @@ using UnityEngine;
 //if time add a serializer to create new languages on editor. 
 public class LocalizationManager : Singleton<LocalizationManager>
 {
-    public int currentLanguageID = 0;
+
     [SerializeField]
     public List<TextAsset> languageFiles = new List<TextAsset>();
     public List<Language> languages = new List<Language>();
 
+    public bool IsReady
+    {
+        set
+        {
+            isReady = value;
+            if (isReady == true)
+            {
+                OnIsReady();
+            }
+        }
+        get
+        {
+            return isReady;
+        }
+
+    }
+    public int CurrentLanguageID
+    {
+        set
+        {
+            int _previousValue = currentLanguageID;
+            currentLanguageID = value;
+            if (_previousValue != currentLanguageID)
+                OnLanguageChanged();
+
+        }
+        get
+        {
+            return currentLanguageID;
+        }
+
+    }
+
+    [SerializeField]
+    private int currentLanguageID = 0;
+    private bool isReady = false;
+
     public delegate void ReloadText();
-    public static event ReloadText Reload;
-
-    public bool IsReady = false;
-
+    public static event ReloadText ReloadLocalization;
 
     override protected void OnAwake()
     {
@@ -40,7 +74,6 @@ public class LocalizationManager : Singleton<LocalizationManager>
             languages.Add(language);
         }
         IsReady = true;
-        SetLanguageAndReload(currentLanguageID);
 
     }
 
@@ -48,7 +81,7 @@ public class LocalizationManager : Singleton<LocalizationManager>
     {
         foreach (Language language in languages)
         {
-            if (language.languageID == currentLanguageID)
+            if (language.languageID == CurrentLanguageID)
             {
                 foreach (TextKeyValue textKeyValue in language.textKeyValueList)
                 {
@@ -63,12 +96,21 @@ public class LocalizationManager : Singleton<LocalizationManager>
         return "undifined";
     }
 
-    public void SetLanguageAndReload(int languageID)
+    public void SetLanguage(int languageID)
     {
-        currentLanguageID = languageID;
-        Reload();
+        CurrentLanguageID = languageID;
     }
 
+    public void OnIsReady()
+    {
+        SetLanguage(CurrentLanguageID);
+        //if (ReloadLocalization != null) ReloadLocalization();
+    }
+
+    public void OnLanguageChanged()
+    {
+        if (ReloadLocalization != null) ReloadLocalization();
+    }
 
 
 }

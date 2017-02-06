@@ -8,24 +8,29 @@ public class LocalizationUIText : MonoBehaviour
 
     void Start()
     {
-        //ReloadLocalText();
+        ReloadLocalText();
     }
 
     void OnEnable()
     {
         //ReloadLocalText();
-        LocalizationManager.Reload += ReloadLocalText;
+        //LocalizationManager.ReloadLocalization += ReloadLocalText;
     }
 
     void OnDisable()
     {
-        LocalizationManager.Reload -= ReloadLocalText;
+        //LocalizationManager.ReloadLocalization -= ReloadLocalText;
     }
 
 
     // Get the string value from localization manager from key & set text component text value to the returned string value
     public void ReloadLocalText()
     {
+        if (LocalizationManager.Instance == null)
+        {
+            Debug.LogError("LocalizationManager null when loading text: " + gameObject.name);
+            return;
+        }
         GetComponent<Text>().text = LocalizationManager.Instance.GetText(key);
 
     }
