@@ -7,8 +7,8 @@ public class UIManager : Singleton<UIManager>
 
     //we should get also the other types of UI that need updating. 
 
-    private UpdatePlayerInfoUI[] UIUpdaters;
-    private LocalizationUIText[] UILocalizationText;
+    public UpdatePlayerInfoUI[] UIUpdaters;
+    public LocalizationUIText[] UILocalizationText;
 
     void Start()
     {
@@ -17,22 +17,22 @@ public class UIManager : Singleton<UIManager>
 
     void OnDestroy()
     {
-        LocalizationManager.ReloadLocalization -= UpdateAllUI;
+        LocalizationManager.ReloadTextEvent -= UpdateAllUI;
     }
 
     void OnLevelWasLoaded()
     {
 
-        LocalizationManager.ReloadLocalization -= UpdateAllUI;
+        LocalizationManager.ReloadTextEvent -= UpdateAllUI;
         GetArrays();
     }
 
     void GetArrays()
     {
-        UIUpdaters = GameObject.FindObjectsOfType<UpdatePlayerInfoUI>();
-        UILocalizationText = GameObject.FindObjectsOfType<LocalizationUIText>();
+        UILocalizationText = Resources.FindObjectsOfTypeAll(typeof(LocalizationUIText)) as LocalizationUIText[];
+        UIUpdaters = Resources.FindObjectsOfTypeAll(typeof(UpdatePlayerInfoUI)) as UpdatePlayerInfoUI[];
         UpdateAllUI();
-        LocalizationManager.ReloadLocalization += UpdateAllUI;
+        LocalizationManager.ReloadTextEvent += UpdateAllUI;
     }
 
 
@@ -40,7 +40,9 @@ public class UIManager : Singleton<UIManager>
     {
 
         if (UILocalizationText == null || UILocalizationText.Length <= 0)
-            UILocalizationText = GameObject.FindObjectsOfType<LocalizationUIText>();
+            UILocalizationText = Resources.FindObjectsOfTypeAll(typeof(LocalizationUIText)) as LocalizationUIText[];
+
+
 
         if (UILocalizationText == null || UILocalizationText.Length <= 0)
             return;
@@ -51,7 +53,7 @@ public class UIManager : Singleton<UIManager>
         }
 
         if (UIUpdaters == null || UIUpdaters.Length <= 0)
-            UIUpdaters = GameObject.FindObjectsOfType<UpdatePlayerInfoUI>();
+            UIUpdaters = Resources.FindObjectsOfTypeAll(typeof(UpdatePlayerInfoUI)) as UpdatePlayerInfoUI[];
 
         if (UIUpdaters == null || UIUpdaters.Length <= 0)
             return;

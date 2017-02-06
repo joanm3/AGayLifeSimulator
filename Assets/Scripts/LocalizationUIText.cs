@@ -6,6 +6,8 @@ public class LocalizationUIText : MonoBehaviour
 {
     public string key;
 
+
+
     void Start()
     {
         ReloadLocalText();

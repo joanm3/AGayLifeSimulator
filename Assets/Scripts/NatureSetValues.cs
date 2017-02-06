@@ -25,6 +25,7 @@ public class NatureSetValues : MonoBehaviour
     public RectTransform[] HideTransformsAfterChoosingNature;
     [Header("Reset Game")]
     public Button ResetGameButton;
+    public Button ChangeLanguageButton;
 
     [Header("List Of Natures")]
     public NatureValues[] Nature;
@@ -56,9 +57,14 @@ public class NatureSetValues : MonoBehaviour
             UpdateNatureUI(ref Nature[index]);
             Nature[index].previous.onClick.AddListener(() => MinusPoints(ref Nature[index]));
             Nature[index].next.onClick.AddListener(() => PlusPoints(ref Nature[index]));
+
+            if (ChangeLanguageButton != null) { ChangeLanguageButton.onClick.AddListener(() => UpdateNatureUI(ref Nature[index])); }
+            else { Debug.LogError("Change Button not assigned"); }
         }
-        ConfirmButton.onClick.AddListener(() => OnConfirmButtonClick());
-        ResetGameButton.onClick.AddListener(() => OnResetButtonClick());
+        if (ConfirmButton != null) { ConfirmButton.onClick.AddListener(() => OnConfirmButtonClick()); }
+        else { Debug.LogError("Confirm Button not assigned"); }
+        if (ResetGameButton != null) { ResetGameButton.onClick.AddListener(() => OnResetButtonClick()); }
+        else { Debug.LogError("Reset Button not assigned"); }
 
         //if player hasnt been chosen yet, do this. 
         if (PlayerManager.Instance != null)
@@ -66,7 +72,6 @@ public class NatureSetValues : MonoBehaviour
             if (PlayerManager.Instance.Info.NatureInitialized == 0)
             {
                 Debug.Log("Playermanager reinitialized to Standard Values");
-                Debug.LogFormat("this: {0}, other: {1}", PlayerManager.Instance.Info.Profile.Name, PlayerManager.Instance.StartingDefaultPlayerInfo.Profile.Name);
                 PlayerManager.Instance.Info = PlayerManager.Instance.StartingDefaultPlayerInfo.Clone();
                 EditProfileCanvas.gameObject.SetActive(true);
                 for (int i = 0; i < HideTransformsBeforeChoosingNature.Length; i++)
@@ -145,6 +150,17 @@ public class NatureSetValues : MonoBehaviour
 
     void UpdateNatureUI(ref NatureValues nature)
     {
+        if (LocalizationManager.Instance == null)
+        {
+            Debug.LogError("localizationManager is null");
+        }
+        if (!LocalizationManager.Instance.IsReady)
+        {
+            Debug.LogError("localizationManager not ready yet when trying to access keys");
+        }
+
+        Debug.Log("HERE HERE HERE THIS HAS BEEN CALLED");
+
         PointsAvailableText.text = LocalizationManager.Instance.GetText(PointsUsedString) + PointsGiven.ToString() + "/" + MaxPoints.ToString();
         nature.valueText.text = nature.value.ToString() + "/" + nature.maxValue.ToString();
         nature.sliderInsideText.text = LocalizationManager.Instance.GetText(nature.sliderChoicesText[nature.value]);

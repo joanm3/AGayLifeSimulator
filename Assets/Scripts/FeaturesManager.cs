@@ -19,6 +19,8 @@ public class FeaturesManager : Singleton<FeaturesManager>
                 features[index].previousButton.onClick.AddListener(() => features[index].NextChoice());
             if (features[index].nextButton != null)
                 features[index].nextButton.onClick.AddListener(() => features[index].PreviousChoice());
+
+            LocalizationManager.ReloadTextEvent += features[index].UpdateFeature;
         }
 
         LoadFeatures();

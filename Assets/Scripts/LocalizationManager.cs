@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 using UnityEngine;
@@ -9,7 +8,7 @@ using UnityEngine;
 //if time add a serializer to create new languages on editor. 
 public class LocalizationManager : Singleton<LocalizationManager>
 {
-
+    public bool reloadOnAwake = true;
     [SerializeField]
     public List<TextAsset> languageFiles = new List<TextAsset>();
     public List<Language> languages = new List<Language>();
@@ -38,7 +37,6 @@ public class LocalizationManager : Singleton<LocalizationManager>
             currentLanguageID = value;
             if (_previousValue != currentLanguageID)
                 OnLanguageChanged();
-
         }
         get
         {
@@ -52,11 +50,17 @@ public class LocalizationManager : Singleton<LocalizationManager>
     private bool isReady = false;
 
     public delegate void ReloadText();
-    public static event ReloadText ReloadLocalization;
+    public static event ReloadText ReloadTextEvent;
 
     override protected void OnAwake()
     {
         base.OnAwake();
+
+        if (!reloadOnAwake)
+        {
+            IsReady = true;
+            return;
+        }
         IsReady = false;
         foreach (TextAsset languageFile in languageFiles)
         {
@@ -109,7 +113,7 @@ public class LocalizationManager : Singleton<LocalizationManager>
 
     public void OnLanguageChanged()
     {
-        if (ReloadLocalization != null) ReloadLocalization();
+        if (ReloadTextEvent != null) ReloadTextEvent();
     }
 
 

@@ -132,14 +132,14 @@
 
 
    <!-- Buttons -->
-  <text key="BTTM">bttm</text> 
-  <text key="TOP">top</text> 
-  <text key="VERS">vers</text>  
+  <text key="B_NEW_GAME">New game</text> 
+  <text key="B_CONTINUE">Continue</text> 
   <text key="B_EDIT_PROFILE">Edit Profile</text> 
   <text key="B_LAUNCH_DAY">Launch Day</text> 
   <text key="B_CONFIRM">Confirm</text>   
   <text key="B_CANCEL">Cancel</text>   
   <text key="B_RESET_GAME">Reset Game</text>   
+  <text key="B_CHANGE_LANGUAGE">Change Language</text>  
 
   <text key="B_GYM">Go to CMG</text>
   <text key="B_GYM_STRENGTH">Strength Program: 50€</text>
@@ -185,7 +185,9 @@
   <text key=""> </text>
   <text key="EUROS">€</text>
   <text key="EUROS_TURN">€/turn</text>
-
+  <text key="BTTM">bttm</text> 
+  <text key="TOP">top</text> 
+  <text key="VERS">vers</text>  
   <text key="MORNING">Morning</text>
   <text key="AFTERNOON">Afternoon</text>
   <text key="EVENING">Evening</text>
