@@ -80,7 +80,7 @@
   <text key="P_HAIR_02">Almost Modern</text>
   <text key="P_HAIR_03">Son Goku</text>
   <text key="P_HAIR_04">70s</text>
-  <text key="P_HAIR_05">Bold</text>
+  <text key="P_HAIR_05">Bald</text>
 
   <text key="P_HAIR_COLOR">Hair Color</text>
   <text key="P_HAIR_COLOR_01">Diva Golden</text>
@@ -101,7 +101,7 @@
   <text key="P_MOUTH_01">Arrogant</text>
   <text key="P_MOUTH_02">Indiferent</text>
   <text key="P_MOUTH_03">Drag Queen</text>
-  <text key="P_MOUTH_04">Troutty</text>
+  <text key="P_MOUTH_04">Trouty</text>
 
   <text key="P_NOSE">Nose</text>
   <text key="P_NOSE_01">An Arrow</text>
@@ -142,7 +142,7 @@
   <text key="B_RESET_GAME">Reset Game</text>   
 
   <text key="B_GYM">Go to CMG</text>
-  <text key="B_GYM_STRENGTH">Strenght Program: 50€</text>
+  <text key="B_GYM_STRENGTH">Strength Program: 50€</text>
   <text key="B_GYM_FITNESS">Fitness: 50€</text>
   <text key="B_GYM_POLE_DANCE">Pole Dance: 100€</text>
   <text key="B_GYM_CROSS_FIT">CrossFit: 120€</text>
@@ -170,7 +170,7 @@
   <text key="B_DOCTOR">Visit the Doctor</text>
   <text key="B_DOCTOR_BLOOD_TEST">Do blood test</text>
   <text key="B_DOCTOR_PSICOTHERAPIST">Psychologist: 80€</text>
-  <text key="B_DOCTOR_MASSAGE">Get a massage</text>
+  <text key="B_DOCTOR_MASSAGE">Get a massage: 50€</text>
 
   <text key="B_PARTY">Go Partying</text>
   <text key="B_SHAVE">Shave</text>

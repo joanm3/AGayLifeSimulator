@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language LANG="french" ID="1">
+
+  <!-- Main Menu -->
+  <text key="MAIN_TITLE">A Gay Life Simulator</text>
+  <text key="MAIN_CONTINUE">Continuer</text>
+  <text key="MAIN_START_NEW_GAME">Nouveau Jeu</text>
+  <text key="MAIN_CONTINUE">Continuer</text>
+  <text key="MAIN_OPTIONS">Options</text>
+  <text key="MAIN_QUIT">Quitter</text>
+
+   <!-- Player -->
+  <text key="P_NATURE">Nature</text>
+  <text key="P_PRETTY_FACE">Visage: </text>
+  <text key="P_PRETTY_FACE_00">Shrek</text>
+  <text key="P_PRETTY_FACE_01">Steve Buscemi</text>
+  <text key="P_PRETTY_FACE_02">Normale</text>
+  <text key="P_PRETTY_FACE_03">Sexy</text>
+  <text key="P_PRETTY_FACE_04">Channing Tatum</text>
+
+  <text key="P_DICK_SIZE">Taille bite: </text>
+  <text key="P_DICK_SIZE_00">XS</text>
+  <text key="P_DICK_SIZE_01">S</text>
+  <text key="P_DICK_SIZE_02">M</text>
+  <text key="P_DICK_SIZE_03">L</text>
+  <text key="P_DICK_SIZE_04">XL</text>
+
+  <text key="P_ASS_ENDURANCE">Plaisir des fesses: </text>
+  <text key="P_ASS_ENDURANCE_00">cage de Pandora</text>
+  <text key="P_ASS_ENDURANCE_01">douloureux</text>
+  <text key="P_ASS_ENDURANCE_02">Avec lub</text>
+  <text key="P_ASS_ENDURANCE_03">gimme more</text>
+  <text key="P_ASS_ENDURANCE_04">man pussy</text>
+
+  <text key="P_ORAL_TALENT">Talent oral: </text>
+  <text key="P_ORAL_TALENT_00">argh...</text>
+  <text key="P_ORAL_TALENT_01">mordeur</text>
+  <text key="P_ORAL_TALENT_02">lecheur</text>
+  <text key="P_ORAL_TALENT_03">deep throat</text>
+  <text key="P_ORAL_TALENT_04">bouche de truite</text>
+
+  <text key="P_STATS">Stats</text>
+  <text key="P_BODY_FAT">Body Fat: </text>
+  <text key="P_BODY_MUSCLES">Muscles: </text>
+
+  <text key="P_BODY_HAIR">Poils: </text>
+  <text key="P_BODY_HAIR_00">lisse</text>
+  <text key="P_BODY_HAIR_01">rasé</text>
+  <text key="P_BODY_HAIR_02">Un peu</text>
+  <text key="P_BODY_HAIR_03">Hairy</text>
+  <text key="P_BODY_HAIR_04">cousin Machin</text>
+
+  <text key="P_SYMPATHY">Sympathie: </text>
+  <text key="P_INTELLIGENCE">Intelligence: </text>
+  <text key="P_SEX_STAMINA">Sex Stamina: </text>
+  <text key="P_SEXINESS">Sex-appeal: </text>
+  <text key="P_STATE">État</text>
+  <text key="P_SALARY">Salaire: </text>
+  <text key="P_FATIGUE">Fatigue: </text>
+  <text key="P_SELF_CONFIDENCE">Self Confidence: </text>
+  <text key="P_MONEY">Argent: </text>
+  <text key="P_SEX_COUNT">Sex compte: </text>
+  <text key="P_DAYS_LEFT">Jours/Circuit: </text>
+
+  <text key="P_FACE">Visage</text>
+  <text key="P_FACE_01">Carré</text>
+  <text key="P_FACE_02">Long</text>
+  <text key="P_FACE_03">Arrondi</text>
+  <text key="P_FACE_04">Cotonneux</text>
+
+
+  <text key="P_FACE_COLOR">Couleur Visage</text>
+  <text key="P_FACE_COLOR_01">Noir</text>
+  <text key="P_FACE_COLOR_02">Blanc</text>
+  <text key="P_FACE_COLOR_03">Donald Trump</text>
+  <text key="P_FACE_COLOR_04">Miss Martian</text>
+
+  <text key="P_HAIR">Cheveux</text>
+  <text key="P_HAIR_01">Intellectuel</text>
+  <text key="P_HAIR_02">Presque modern</text>
+  <text key="P_HAIR_03">Son Goku</text>
+  <text key="P_HAIR_04">70s</text>
+  <text key="P_HAIR_05">Chauve</text>
+
+  <text key="P_HAIR_COLOR">Couleur Cheveux</text>
+  <text key="P_HAIR_COLOR_01">Diva Golden</text>
+  <text key="P_HAIR_COLOR_02">Brun</text>
+  <text key="P_HAIR_COLOR_03">Sombre</text>
+  <text key="P_HAIR_COLOR_04">Roux</text>
+  <text key="P_HAIR_COLOR_05">Blanc</text>
+  <text key="P_HAIR_COLOR_06">Pinky Gloss</text>
+
+  <text key="P_EYES">Yeux</text>
+  <text key="P_EYES_01">posh</text>
+  <text key="P_EYES_02">sans études</text>
+  <text key="P_EYES_03">inquiètes</text>
+  <text key="P_EYES_04">bro Like</text>
+  <text key="P_EYES_05">je m'en fiche</text>
+
+  <text key="P_MOUTH">Bouche</text>
+  <text key="P_MOUTH_01">arrogant</text>
+  <text key="P_MOUTH_02">indifférent</text>
+  <text key="P_MOUTH_03">Drag Queen</text>
+  <text key="P_MOUTH_04">de poisson</text>
+
+  <text key="P_NOSE">Nez</text>
+  <text key="P_NOSE_01">de flèche</text>
+  <text key="P_NOSE_02">aiguisé</text>
+  <text key="P_NOSE_03">arrondi</text>
+  <text key="P_NOSE_04">ample</text>
+
+  <text key="P_BEARD">Barbe</text>
+  <text key="P_BEARD_01">twink</text>
+  <text key="P_BEARD_02">à l'aventure</text>
+  <text key="P_BEARD_03">cercle de la vie</text>
+  <text key="P_BEARD_04">hippster</text>
+
+
+  <text key="P_BEARD_COLOR">Couleur Barbe</text>
+  <text key="P_BEARD_COLOR_01">Diva Golden</text>
+  <text key="P_BEARD_COLOR_02">Brun</text>
+  <text key="P_BEARD_COLOR_03">Sombre</text>
+  <text key="P_BEARD_COLOR_04">Roux</text>
+  <text key="P_BEARD_COLOR_05">Blanc</text>
+  <text key="P_BEARD_COLOR_06">Pinky Gloss</text>
+
+  <text key="P_NAME">Nom</text>
+  <text key="P_AGE">Âge</text>
+  <text key="P_ROLE">Rôle</text>
+  <text key="P_NAME_ENTER_TEXT">Entrez votre pseudo...</text>
+  <text key="P_AGE_ENTER_TEXT">Entrez votre âge...</text>
+
+
+   <!-- Buttons -->
+  <text key="BTTM">bttm</text> 
+  <text key="TOP">top</text> 
+  <text key="VERS">vers</text>  
+  <text key="B_EDIT_PROFILE">Éditer Profil</text> 
+  <text key="B_LAUNCH_DAY">C'est parti!</text> 
+  <text key="B_CONFIRM">Confirmer</text>   
+  <text key="B_CANCEL">Annuler</text>   
+  <text key="B_RESET_GAME">Reset le jeu</text>   
+
+  <text key="B_GYM">Aller à la CMG</text>
+  <text key="B_GYM_STRENGTH">Program de force: 50€</text>
+  <text key="B_GYM_FITNESS">Fitness: 50€</text>
+  <text key="B_GYM_POLE_DANCE">Pole Dance: 100€</text>
+  <text key="B_GYM_CROSS_FIT">CrossFit: 120€</text>
+
+  <text key="B_SAUNA">Aller au Suncity Sauna</text>
+  <text key="B_SAUNA_RELAX">Se relâcher: 50€</text>
+  <text key="B_SAUNA_DARK_ROOM">Darkroom: 50€</text>
+
+  <text key="B_WORK">Aller au travail</text>
+  <text key="B_WORK_HARD">Work Hard</text>
+  <text key="B_WORK_MUSIC">Écouter Fifth Harmony</text>
+  <text key="B_WORK_RAISE">Demander augmentation</text>
+
+  <text key="B_LE_MARAIS">Visiter le Marais</text>
+  <text key="B_LE_MARAIS_SHOPPING">faire des courses</text>
+  <text key="B_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
+  <text key="B_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
+  <text key="B_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
+
+  <text key="B_VIDEOGAMES">Joueur jeu vidéo</text>
+  <text key="B_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
+  <text key="B_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
+  <text key="B_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
+
+  <text key="B_DOCTOR">Visiter le Docteur</text>
+  <text key="B_DOCTOR_BLOOD_TEST">Test dépistage</text>
+  <text key="B_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
+  <text key="B_DOCTOR_MASSAGE">Kine, massage: 50€</text>
+
+  <text key="B_PARTY">Aller en boite</text>
+  <text key="B_SHAVE">Se raser</text>
+  <text key="B_GLEE">Voir Episode de Glee</text>
+  <text key="B_PORN">Regarder du porno</text>
+
+     <!-- Tips -->
+  <text key="T_INFORMATION">Informations</text>
+
+
+     <!-- Misc -->
+  <text key=""> </text>
+  <text key="EUROS">€</text>
+  <text key="EUROS_TURN">€/tour</text>
+
+  <text key="MORNING">Matin</text>
+  <text key="AFTERNOON">Après-midi</text>
+  <text key="EVENING">Soir</text>
+  <text key="SELECT_NATURE">Selectionne ta nature</text>
+  <text key="POINTS_USED">Points Utilisés: </text>
+  <text key="POINTS_USED_NOTE">(Note: tu ne seras pas capable de changer la nature une fois choisi)</text>
+  <text key="CONFIRM_MAX_POINTS_TRUE">Tu ne seras pas capable de changer la nature une fois choisi. Est-tu sûr de confirmer? </text>
+  <text key="CONFIRM_MAX_POINTS_FALSE">Tu n'as pas utilisé tous les points. Tu ne seras pas capable de changer la nature une fois choisi, donc tu vas jouer désavantagé. Est-tu sûr de confirmer? </text>
+
+
+
+</Language>
