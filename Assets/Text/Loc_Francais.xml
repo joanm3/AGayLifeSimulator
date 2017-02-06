@@ -69,7 +69,7 @@
   <text key="P_FACE_04">Cotonneux</text>
 
 
-  <text key="P_FACE_COLOR">Couleur Visage</text>
+  <text key="P_FACE_COLOR">Couleur</text>
   <text key="P_FACE_COLOR_01">Noir</text>
   <text key="P_FACE_COLOR_02">Blanc</text>
   <text key="P_FACE_COLOR_03">Donald Trump</text>
@@ -82,7 +82,7 @@
   <text key="P_HAIR_04">70s</text>
   <text key="P_HAIR_05">Chauve</text>
 
-  <text key="P_HAIR_COLOR">Couleur Cheveux</text>
+  <text key="P_HAIR_COLOR">Couleur</text>
   <text key="P_HAIR_COLOR_01">Diva Golden</text>
   <text key="P_HAIR_COLOR_02">Brun</text>
   <text key="P_HAIR_COLOR_03">Sombre</text>
@@ -116,7 +116,7 @@
   <text key="P_BEARD_04">hippster</text>
 
 
-  <text key="P_BEARD_COLOR">Couleur Barbe</text>
+  <text key="P_BEARD_COLOR">Couleur</text>
   <text key="P_BEARD_COLOR_01">Diva Golden</text>
   <text key="P_BEARD_COLOR_02">Brun</text>
   <text key="P_BEARD_COLOR_03">Sombre</text>
