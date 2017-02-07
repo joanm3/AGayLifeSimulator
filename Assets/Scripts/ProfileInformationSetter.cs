@@ -12,6 +12,40 @@ public class ProfileInformationSetter : MonoBehaviour
     public Text role;
     public Text hivStatus;
 
+    void OnEnable()
+    {
+        UpdateProfileUI();
+        LocalizationManager.ReloadTextEvent += UpdateProfileUI;
+    }
+
+    void OnDisable()
+    {
+        LocalizationManager.ReloadTextEvent -= UpdateProfileUI;
+    }
+
+    void UpdateProfileUI()
+    {
+        if (profileName == null || age == null || hivStatus == null || role == null)
+        {
+            Debug.LogError("Please assign name, age, role and HIVStatus text UI to Player Manager");
+        }
+        else
+        {
+            profileName.text = PlayerManager.Instance.Info.Profile.Name;
+            profileName.text = PlayerManager.Instance.Info.Profile.Age;
+            hivStatus.text = (PlayerManager.Instance.Info.Profile.HIVStatus == 0) ?
+               LocalizationManager.Instance.GetText("HIV_NEG") :
+               LocalizationManager.Instance.GetText("HIV_POS");
+            if (PlayerManager.Instance.Info.Profile.Role == 0)
+                role.text = LocalizationManager.Instance.GetText("BTTM");
+            else if (PlayerManager.Instance.Info.Profile.Role == 1)
+                role.text = LocalizationManager.Instance.GetText("TOP");
+            else
+                role.text = LocalizationManager.Instance.GetText("VERS");
+        }
+    }
+
+
     public void SetProfileName(Text text)
     {
         profileName.text = text.text;
@@ -40,12 +74,15 @@ public class ProfileInformationSetter : MonoBehaviour
                 PlayerManager.Instance.Info.Profile.Role = FeaturesManager.Instance.features[i].currIndex;
             }
         }
+        UpdateProfileUI();
     }
 
     public void SetHivStatus(Text text)
     {
         hivStatus.text = text.text;
         PlayerManager.Instance.Info.Profile.HIVStatus = text.text.Contains("-") ? 0 : 1;
+        UpdateProfileUI();
+
     }
 
 

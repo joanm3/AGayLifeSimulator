@@ -6,19 +6,59 @@ using UnityEngine.UI;
 
 public class LoadSceneWhenReady : MonoBehaviour
 {
+    [SerializeField]
+    private bool locReady = false;
+    [SerializeField]
+    private bool playerReady = false;
+    [SerializeField]
+    private bool loadLevel = false;
+    [SerializeField]
+    private Button[] buttonsOfMenu;
 
-    public bool locReady = false;
-    public bool loadLevel = false;
-    public Button[] buttonsOfMenu;
+    [SerializeField]
+    private Text mainTitle;
+    [SerializeField]
+    private Button newGameButton;
+    [SerializeField]
+    private Button continueButton;
+    [SerializeField]
+    private Dropdown languageDropdown;
+
+    private LocalizationUIText[] texts;
 
     void Awake()
     {
         loadLevel = false;
         locReady = false;
-        foreach (Button button in buttonsOfMenu)
+        playerReady = false;
+
+        if (newGameButton == null || continueButton == null || mainTitle == null || languageDropdown == null)
         {
-            button.gameObject.SetActive(false);
+            Debug.LogError("Please assign all parameters for load scene");
+            Destroy(this);
+            return;
         }
+
+        newGameButton.onClick.AddListener(() => NewGame());
+        continueButton.onClick.AddListener(() => Continue());
+
+        newGameButton.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(false);
+        mainTitle.gameObject.SetActive(false);
+    }
+
+    void Start()
+    {
+        texts = Resources.FindObjectsOfTypeAll(typeof(LocalizationUIText)) as LocalizationUIText[];
+        languageDropdown.value = LocalizationManager.Instance.CurrentLanguageID;
+        languageDropdown.onValueChanged.AddListener((value) => DropdownChanged(value));
+        languageDropdown.gameObject.SetActive(false);
+    }
+
+    void OnDestroy()
+    {
+        if (newGameButton != null) newGameButton.onClick.RemoveAllListeners();
+        if (continueButton != null) continueButton.onClick.RemoveAllListeners();
     }
 
     void Update()
@@ -27,27 +67,41 @@ public class LoadSceneWhenReady : MonoBehaviour
             if (LocalizationManager.Instance.IsReady)
             {
                 locReady = true;
-                foreach (Button button in buttonsOfMenu)
-                {
-                    button.gameObject.SetActive(true);
-                }
+                newGameButton.gameObject.SetActive(true);
+                continueButton.gameObject.SetActive(true);
+                mainTitle.gameObject.SetActive(true);
+                languageDropdown.gameObject.SetActive(true);
             }
 
-        if (locReady && loadLevel)
+
+        if (PlayerManager.Instance.IsReady)
+            playerReady = true;
+
+        continueButton.interactable = (PlayerManager.Instance.Info.NatureInitialized == 1);
+
+
+        if (locReady && loadLevel && playerReady)
             SceneManager.LoadScene("Main");
     }
 
     public void NewGame()
     {
-        //here will be null. call it in title scene for this. 
-        //HERE HERE HERE HERE HERE IMPORTANT
-        //PlayerManager.Instance.ReinitializeGame();
+        PlayerManager.Instance.ReinitializeGame();
         loadLevel = true;
     }
 
     public void Continue()
     {
         loadLevel = true;
+    }
+
+    private void DropdownChanged(int value)
+    {
+        LocalizationManager.Instance.CurrentLanguageID = value;
+        foreach (LocalizationUIText text in texts)
+        {
+            text.ReloadLocalText();
+        }
     }
 
 }

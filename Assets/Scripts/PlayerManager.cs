@@ -8,19 +8,34 @@ using System.Reflection;
 
 public class PlayerManager : Singleton<PlayerManager>
 {
-    public Text Name;
-    public Text Age;
-    public Text HIVStatus;
-    public Text Role;
+
     [Space(10)]
     public PlayerInfo Info;
     [Space(10)]
     public PlayerInfo StartingDefaultPlayerInfo;
-    public int Test = 1;
+    public bool IsReady
+    {
+        set
+        {
+            isReady = value;
+            if (isReady == true)
+            {
+                OnIsReady();
+            }
+        }
+        get
+        {
+            return isReady;
+        }
+
+    }
+
+    private bool isReady = false;
 
     void OnEnable()
     {
         LoadFeatures();
+        IsReady = true;
     }
 
     void OnDisable()
@@ -28,7 +43,10 @@ public class PlayerManager : Singleton<PlayerManager>
         SaveFeatures();
     }
 
+    public void OnIsReady()
+    {
 
+    }
 
     public void LoadFeatures()
     {
@@ -38,23 +56,6 @@ public class PlayerManager : Singleton<PlayerManager>
         FData.LoadFeature("PROFILE_AGE", ref Info.Profile.Age);
         FData.LoadFeature("PROFILE_ROLE", ref Info.Profile.Role);
         FData.LoadFeature("PROFILE_HIVSTATUS", ref Info.Profile.HIVStatus);
-
-        if (Name == null || Age == null || HIVStatus == null || Role == null)
-        {
-            Debug.LogError("Please assign name, age, role and HIVStatus text UI to Player Manager");
-        }
-        else
-        {
-            Name.text = Info.Profile.Name;
-            Age.text = Info.Profile.Age;
-            HIVStatus.text = (Info.Profile.HIVStatus == 0) ? "HIV-" : "HIV+";
-            if (Info.Profile.Role == 0)
-                Role.text = "Bttm";
-            else if (Info.Profile.Role == 1)
-                Role.text = "Top";
-            else
-                Role.text = "Vers";
-        }
 
         FData.LoadFeature("NATURE_FACE", ref Info.Nature.PrettyFace);
         FData.LoadFeature("NATURE_DICK", ref Info.Nature.DickSize);
@@ -118,13 +119,12 @@ public class PlayerManager : Singleton<PlayerManager>
     public void ReinitializeGame()
     {
         Debug.Log("game reinitialized");
-        Debug.LogFormat("this: {0}, other: {1}", Instance.Info.Profile.Name, Instance.StartingDefaultPlayerInfo.Profile.Name);
 
         Instance.Info = Instance.StartingDefaultPlayerInfo.Clone();
-        if (UIManager.Instance == null)
-            UIManager.Init();
-        UIManager.Instance.UpdateAllUI();
+        if (UIManager.Instance != null) { UIManager.Instance.UpdateAllUI(); }
     }
+
+
 }
 
 [System.Serializable]
@@ -136,7 +136,6 @@ public class PlayerInfo
     public PlayerNature Nature;
     public PlayerStats Stats;
     public PlayerState State;
-    public int Test = 2;
 
     [System.Serializable]
     public class PlayerNature
@@ -176,7 +175,7 @@ public class PlayerInfo
         public int Fatigue;
         public int MaxFatigue;
         public int SelfConfidence;
-        public int WorkBonus; 
+        public int WorkBonus;
     }
 
     [System.Serializable]

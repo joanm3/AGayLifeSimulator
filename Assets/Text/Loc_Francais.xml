@@ -4,7 +4,7 @@
   <!-- Main Menu -->
   <text key="MAIN_TITLE">A Gay Life Simulator</text>
   <text key="MAIN_CONTINUE">Continuer</text>
-  <text key="MAIN_START_NEW_GAME">Nouveau Jeu</text>
+  <text key="MAIN_NEW_GAME">Nouveau Jeu</text>
   <text key="MAIN_CONTINUE">Continuer</text>
   <text key="MAIN_OPTIONS">Options</text>
   <text key="MAIN_QUIT">Quitter</text>
@@ -190,6 +190,8 @@
   <text key="BTTM">bttm</text> 
   <text key="TOP">top</text> 
   <text key="VERS">vers</text>  
+  <text key="HIV_NEG">HIV-</text> 
+  <text key="HIV_POS">HIV+</text>  
   <text key="MORNING">Matin</text>
   <text key="AFTERNOON">Après-midi</text>
   <text key="EVENING">Soir</text>

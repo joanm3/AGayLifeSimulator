@@ -159,8 +159,6 @@ public class NatureSetValues : MonoBehaviour
             Debug.LogError("localizationManager not ready yet when trying to access keys");
         }
 
-        Debug.Log("HERE HERE HERE THIS HAS BEEN CALLED");
-
         PointsAvailableText.text = LocalizationManager.Instance.GetText(PointsUsedString) + PointsGiven.ToString() + "/" + MaxPoints.ToString();
         nature.valueText.text = nature.value.ToString() + "/" + nature.maxValue.ToString();
         nature.sliderInsideText.text = LocalizationManager.Instance.GetText(nature.sliderChoicesText[nature.value]);
