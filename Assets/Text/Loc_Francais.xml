@@ -18,15 +18,15 @@
   <text key="P_PRETTY_FACE_03">Sexy</text>
   <text key="P_PRETTY_FACE_04">Channing Tatum</text>
 
-  <text key="P_DICK_SIZE">Taille bite: </text>
+  <text key="P_DICK_SIZE">Queue: </text>
   <text key="P_DICK_SIZE_00">XS</text>
   <text key="P_DICK_SIZE_01">S</text>
   <text key="P_DICK_SIZE_02">M</text>
   <text key="P_DICK_SIZE_03">L</text>
   <text key="P_DICK_SIZE_04">XL</text>
 
-  <text key="P_ASS_ENDURANCE">Plaisir des fesses: </text>
-  <text key="P_ASS_ENDURANCE_00">cage de Pandora</text>
+  <text key="P_ASS_ENDURANCE">Plaisir fesses: </text>
+  <text key="P_ASS_ENDURANCE_00">c. Pandora</text>
   <text key="P_ASS_ENDURANCE_01">douloureux</text>
   <text key="P_ASS_ENDURANCE_02">Avec lub</text>
   <text key="P_ASS_ENDURANCE_03">gimme more</text>
@@ -182,6 +182,7 @@
 
      <!-- Tips -->
   <text key="T_INFORMATION">Informations</text>
+
   <text key="T_EDIT_PROFILE">Informations</text>
   <text key="T_LAUNCH_DAY">Informations</text>
 
@@ -209,38 +210,30 @@
   <text key="T_GYM_FITNESS">Fitness: 50€</text>
   <text key="T_GYM_POLE_DANCE">Pole Dance: 100€</text>
   <text key="T_GYM_CROSS_FIT">CrossFit: 120€</text>
-
   <text key="T_SAUNA">Aller au Suncity Sauna</text>
   <text key="T_SAUNA_RELAX">Se relâcher: 50€</text>
   <text key="T_SAUNA_DARK_ROOM">Darkroom: 50€</text>
-
   <text key="T_WORK">Aller au travail</text>
   <text key="T_WORK_HARD">Work Hard</text>
   <text key="T_WORK_MUSIC">Écouter Fifth Harmony</text>
   <text key="T_WORK_RAISE">Demander augmentation</text>
-
   <text key="T_LE_MARAIS">Visiter le Marais</text>
   <text key="T_LE_MARAIS_SHOPPING">faire des courses</text>
   <text key="T_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
   <text key="T_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
   <text key="T_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
-
   <text key="T_VIDEOGAMES">Joueur jeu vidéo</text>
   <text key="T_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
   <text key="T_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
   <text key="T_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
-
   <text key="T_DOCTOR">Visiter le Docteur</text>
   <text key="T_DOCTOR_BLOOD_TEST">Test dépistage</text>
   <text key="T_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
   <text key="T_DOCTOR_MASSAGE">Kine, massage: 50€</text>
-
   <text key="T_PARTY">Aller en boite: 40€</text>
   <text key="T_SHAVE">Se raser</text>
   <text key="T_GLEE">Voir Episode de Glee</text>
   <text key="T_PORN">Regarder du porno</text>
-
-
 
      <!-- Results -->
   <text key="R_RESULTS">Results</text>
@@ -293,6 +286,54 @@
   <text key="R_F_PORN">Regarder du porno</text>
 
 
+     <!-- Blinder -->
+  <text key="BL_DESCRIPTION">Description: </text>
+  <text key="BL_TALK">Parler</text>
+  <text key="BL_SEND_DICK_PIC">Env. photo queue</text>
+  <text key="BL_BLOCK">bloquer</text> 
+  <text key="BL_DATE">Rencontrer</text> 
+  <text key="BL_WAIT">Attendre a demain...</text> 
+  <text key="BL_NO_DATE">Tu n'as pas rencontré des mecs aujourd'hui. Essaye un autre jour...</text> 
+
+  <text key="BL_G1_NAME">XXL qui vide?</text>  
+  <text key="BL_G1_DESCRIPTION">chc bon suceur pour se soir</text> 
+  <text key="BL_G1_S">success</text> 
+  <text key="BL_G1_F">failure</text> 
+
+  <text key="BL_G2_NAME">CoupleCool</text>  
+  <text key="BL_G2_DESCRIPTION">threesome avec mec cool et musculaire. pas effimines.</text> 
+  <text key="BL_G2_S">success</text> 
+  <text key="BL_G2_F">failure</text>
+
+  <text key="BL_G3_NAME">masseur</text>  
+  <text key="BL_G3_DESCRIPTION">j'offre massage et je suce apres pour 20€</text> 
+  <text key="BL_G3_S">success</text> 
+  <text key="BL_G3_F">failure</text> 
+
+  <text key="BL_G4_NAME">turist</text>  
+  <text key="BL_G4_DESCRIPTION">visiting for a few days looking for fun. Only for hung guys</text> 
+  <text key="BL_G4_S">success</text> 
+  <text key="BL_G4_F">failure</text> 
+
+  <text key="BL_G5_NAME">vieux photos</text>  
+  <text key="BL_G5_DESCRIPTION">je fais des seances de photos et apres je baise avec les mecs. je paye 50€</text> 
+  <text key="BL_G5_S">success</text> 
+  <text key="BL_G5_F">failure</text> 
+
+  <text key="BL_G6_NAME">mec normal</text>  
+  <text key="BL_G6_DESCRIPTION">si je suis normal, pourquoi je mets cette photo de profile? chc mecs sympas</text> 
+  <text key="BL_G6_S">success</text> 
+  <text key="BL_G6_F">failure</text>
+
+  <text key="BL_G7_NAME">nike</text>  
+  <text key="BL_G7_DESCRIPTION">tu aimes te faire sniffer skets sox? pour mecs endurants</text> 
+  <text key="BL_G7_S">success</text> 
+  <text key="BL_G7_F">failure</text>  
+
+  <text key="BL_G8_NAME">french arab</text>  
+  <text key="BL_G8_DESCRIPTION">jaime les mecs gros et poilus</text> 
+  <text key="BL_G8_S">success</text> 
+  <text key="BL_G8_F">failure</text>
      <!-- Misc -->
   <text key=""> </text>
   <text key="EUROS">€</text>

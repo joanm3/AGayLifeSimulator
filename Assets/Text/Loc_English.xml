@@ -127,6 +127,7 @@
   <text key="P_NAME">Name</text>
   <text key="P_AGE">Age</text>
   <text key="P_ROLE">Role</text>
+
   <text key="P_NAME_ENTER_TEXT">Enter profile name...</text>
   <text key="P_AGE_ENTER_TEXT">Enter profile age...</text>
 
@@ -288,6 +289,56 @@
   <text key="R_F_SHAVE">You cut yourself! Sexiness -1</text>
   <text key="R_F_GLEE">Kurt et Blaine ont eu un conflit dans l'episode d'aujourd'hui. Self confidence -1</text>
   <text key="R_F_PORN">Regarder du porno</text>
+
+    <!-- Blinder -->
+  <text key="BL_DESCRIPTION">Description: </text>
+  <text key="BL_TALK">Parler</text>
+  <text key="BL_SEND_DICK_PIC">Env. photo queue</text>
+  <text key="BL_BLOCK">bloquer</text> 
+  <text key="BL_DATE">Rencontrer</text> 
+  <text key="BL_WAIT">Attendre a demain...</text> 
+  <text key="BL_NO_DATE">Tu n'as pas rencontré des mecs aujourd'hui. Essaye un autre jour...</text> 
+
+
+  <text key="BL_G1_NAME">XXL qui vide?</text>  
+  <text key="BL_G1_DESCRIPTION">chc bon suceur pour se soir</text> 
+  <text key="BL_G1_S">success</text> 
+  <text key="BL_G1_F">failure</text> 
+
+  <text key="BL_G2_NAME">CoupleCool</text>  
+  <text key="BL_G2_DESCRIPTION">threesome avec mec cool et musculaire. pas effimines.</text> 
+  <text key="BL_G2_S">success</text> 
+  <text key="BL_G2_F">failure</text>
+
+  <text key="BL_G3_NAME">masseur</text>  
+  <text key="BL_G3_DESCRIPTION">j'offre massage et je suce apres pour 20€</text> 
+  <text key="BL_G3_S">success</text> 
+  <text key="BL_G3_F">failure</text> 
+
+  <text key="BL_G4_NAME">turist</text>  
+  <text key="BL_G4_DESCRIPTION">visiting for a few days looking for fun. Only for hung guys</text> 
+  <text key="BL_G4_S">success</text> 
+  <text key="BL_G4_F">failure</text> 
+
+  <text key="BL_G5_NAME">vieux photos</text>  
+  <text key="BL_G5_DESCRIPTION">je fais des seances de photos et apres je baise avec les mecs. je paye 50€</text> 
+  <text key="BL_G5_S">success</text> 
+  <text key="BL_G5_F">failure</text> 
+
+  <text key="BL_G6_NAME">mec normal</text>  
+  <text key="BL_G6_DESCRIPTION">si je suis normal, pourquoi je mets cette photo de profile? chc mecs sympas</text> 
+  <text key="BL_G6_S">success</text> 
+  <text key="BL_G6_F">failure</text>
+
+  <text key="BL_G7_NAME">nike</text>  
+  <text key="BL_G7_DESCRIPTION">tu aimes te faire sniffer skets sox? pour mecs endurants</text> 
+  <text key="BL_G7_S">success</text> 
+  <text key="BL_G7_F">failure</text>  
+
+  <text key="BL_G8_NAME">french arab</text>  
+  <text key="BL_G8_DESCRIPTION">jaime les mecs gros et poilus</text> 
+  <text key="BL_G8_S">success</text> 
+  <text key="BL_G8_F">failure</text>
 
      <!-- Misc -->
   <text key=""> </text>

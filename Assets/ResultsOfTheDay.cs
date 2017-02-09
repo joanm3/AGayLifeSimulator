@@ -10,6 +10,7 @@ public class ResultsOfTheDay : Singleton<ResultsOfTheDay>
     public Text eveningResults;
     public Text dateResults;
 
+
     void Start()
     {
         gameObject.SetActive(false);

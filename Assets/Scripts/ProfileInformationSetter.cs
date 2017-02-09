@@ -32,7 +32,7 @@ public class ProfileInformationSetter : MonoBehaviour
         else
         {
             profileName.text = PlayerManager.Instance.Info.Profile.Name;
-            profileName.text = PlayerManager.Instance.Info.Profile.Age;
+            age.text = PlayerManager.Instance.Info.Profile.Age;
             hivStatus.text = (PlayerManager.Instance.Info.Profile.HIVStatus == 0) ?
                LocalizationManager.Instance.GetText("HIV_NEG") :
                LocalizationManager.Instance.GetText("HIV_POS");

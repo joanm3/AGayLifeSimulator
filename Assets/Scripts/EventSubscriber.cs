@@ -46,9 +46,6 @@ public class EventSubscriber : MonoBehaviour
             case ActivitiesManager.EventSchedule.Evening:
                 ActivitiesManager.OnNight += PlayEvent;
                 break;
-            case ActivitiesManager.EventSchedule.Date:
-                ActivitiesManager.OnDate += PlayEvent;
-                break;
         }
     }
 
@@ -64,9 +61,6 @@ public class EventSubscriber : MonoBehaviour
                 break;
             case ActivitiesManager.EventSchedule.Evening:
                 ActivitiesManager.OnNight -= PlayEvent;
-                break;
-            case ActivitiesManager.EventSchedule.Date:
-                ActivitiesManager.OnDate -= PlayEvent;
                 break;
         }
     }
@@ -143,7 +137,14 @@ public class GEvent
         }
 
         //check if we see the last iteration, otherwise call later (but then check that the text is being correctly loaded)
-        ResultsOfTheDay.Instance.gameObject.SetActive(true);
+        if (schedule != ActivitiesManager.EventSchedule.Date)
+        {
+            ResultsOfTheDay.Instance.gameObject.SetActive(true);
+        }
+        else
+        {
+            BlinderManager.Instance.resultsCanvas.gameObject.SetActive(true);
+        }
 
         if (conditionsTrue)
         {
@@ -159,6 +160,7 @@ public class GEvent
                     ResultsOfTheDay.Instance.eveningResults.text = LocalizationManager.Instance.GetText(successTextKey);
                     break;
                 case ActivitiesManager.EventSchedule.Date:
+                    BlinderManager.Instance.resultsText.text = LocalizationManager.Instance.GetText(successTextKey);
                     ResultsOfTheDay.Instance.dateResults.text = LocalizationManager.Instance.GetText(successTextKey);
                     break;
             }
@@ -177,7 +179,9 @@ public class GEvent
                     ResultsOfTheDay.Instance.eveningResults.text = LocalizationManager.Instance.GetText(failureTextKey);
                     break;
                 case ActivitiesManager.EventSchedule.Date:
+                    BlinderManager.Instance.resultsText.text = LocalizationManager.Instance.GetText(failureTextKey);
                     ResultsOfTheDay.Instance.dateResults.text = LocalizationManager.Instance.GetText(failureTextKey);
+
                     break;
             }
         }
