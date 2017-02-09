@@ -1,17 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ActivitiesManager : MonoBehaviour
 {
+    public Button LaunchButton;
     public delegate void ActivityEventType();
     public static event ActivityEventType OnMorning;
     public static event ActivityEventType OnAfternoon;
     public static event ActivityEventType OnNight;
     public static event ActivityEventType OnDate;
 
+    //public delegate void ResultEventType(EventSchedule schedule);
+    //public static event ResultEventType OnResults;
 
+    public enum EventSchedule { Morning, Afternoon, Evening, Date };
 
+    private Button[] allButtons;
+    private Toggle[] allToggles;
+
+    void Start()
+    {
+
+        LaunchButton.onClick.AddListener(() => LaunchDay());
+
+        allButtons = Resources.FindObjectsOfTypeAll(typeof(Button)) as Button[];
+        allToggles = Resources.FindObjectsOfTypeAll(typeof(Toggle)) as Toggle[];
+
+        foreach (Button button in allButtons)
+        {
+            button.onClick.AddListener(() => SetInteractable());
+        }
+
+        foreach (Toggle toggle in allToggles)
+        {
+            toggle.onValueChanged.AddListener((on) => SetInteractable(on));
+        }
+
+    }
 
     public void LaunchDay()
     {
@@ -34,6 +61,32 @@ public class ActivitiesManager : MonoBehaviour
 
 
     }
+
+    void SetInteractable()
+    {
+        if (OnMorning == null || OnAfternoon == null || OnNight == null)
+        {
+            LaunchButton.interactable = false;
+        }
+        else
+        {
+            LaunchButton.interactable = true;
+        }
+    }
+
+    void SetInteractable(bool on)
+    {
+        if (OnMorning == null || OnAfternoon == null || OnNight == null)
+        {
+            LaunchButton.interactable = false;
+        }
+        else
+        {
+            LaunchButton.interactable = true;
+        }
+    }
+
+
 
 
 

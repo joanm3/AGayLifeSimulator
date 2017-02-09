@@ -8,9 +8,9 @@ using GayProject.Reflection;
 [RequireComponent(typeof(Toggle))]
 public class EventSubscriber : MonoBehaviour
 {
-    public EventSchedule Schedule = EventSchedule.Morning;
+    public ActivitiesManager.EventSchedule Schedule = ActivitiesManager.EventSchedule.Morning;
     public GEvent Activity;
-    public enum EventSchedule { Morning, Afternoon, Evening, Date };
+
 
     private Toggle toggle;
 
@@ -37,16 +37,16 @@ public class EventSubscriber : MonoBehaviour
     {
         switch (Schedule)
         {
-            case EventSchedule.Morning:
+            case ActivitiesManager.EventSchedule.Morning:
                 ActivitiesManager.OnMorning += PlayEvent;
                 break;
-            case EventSchedule.Afternoon:
+            case ActivitiesManager.EventSchedule.Afternoon:
                 ActivitiesManager.OnAfternoon += PlayEvent;
                 break;
-            case EventSchedule.Evening:
+            case ActivitiesManager.EventSchedule.Evening:
                 ActivitiesManager.OnNight += PlayEvent;
                 break;
-            case EventSchedule.Date:
+            case ActivitiesManager.EventSchedule.Date:
                 ActivitiesManager.OnDate += PlayEvent;
                 break;
         }
@@ -56,16 +56,16 @@ public class EventSubscriber : MonoBehaviour
     {
         switch (Schedule)
         {
-            case EventSchedule.Morning:
+            case ActivitiesManager.EventSchedule.Morning:
                 ActivitiesManager.OnMorning -= PlayEvent;
                 break;
-            case EventSchedule.Afternoon:
+            case ActivitiesManager.EventSchedule.Afternoon:
                 ActivitiesManager.OnAfternoon -= PlayEvent;
                 break;
-            case EventSchedule.Evening:
+            case ActivitiesManager.EventSchedule.Evening:
                 ActivitiesManager.OnNight -= PlayEvent;
                 break;
-            case EventSchedule.Date:
+            case ActivitiesManager.EventSchedule.Date:
                 ActivitiesManager.OnDate -= PlayEvent;
                 break;
         }
@@ -75,6 +75,7 @@ public class EventSubscriber : MonoBehaviour
     void PlayEvent()
     {
         Activity.ComputeEvent();
+        Activity.ComputeResultsText(Schedule);
     }
 }
 
@@ -95,6 +96,7 @@ public class GEvent
     public void ComputeEvent()
     {
         //check if conditions are true
+        conditionsTrue = true;
         if (conditions != null && conditions.Length > 0)
         {
             for (int i = 0; i < conditions.Length; i++)
@@ -102,14 +104,10 @@ public class GEvent
                 if (!conditions[i].ConditionIsTrue())
                 {
                     conditionsTrue = false;
-                    break;
                 }
             }
         }
-        else
-        {
-            conditionsTrue = true;
-        }
+
 
         //compute results depending on conditions
         if (conditionsTrue)
@@ -134,6 +132,56 @@ public class GEvent
             }
             Debug.Log("failure");
         }
+    }
+
+    public void ComputeResultsText(ActivitiesManager.EventSchedule schedule)
+    {
+        if (ResultsOfTheDay.Instance == null)
+        {
+            Debug.Log("Results of the day instance is null, not computing key text");
+            return;
+        }
+
+        //check if we see the last iteration, otherwise call later (but then check that the text is being correctly loaded)
+        ResultsOfTheDay.Instance.gameObject.SetActive(true);
+
+        if (conditionsTrue)
+        {
+            switch (schedule)
+            {
+                case ActivitiesManager.EventSchedule.Morning:
+                    ResultsOfTheDay.Instance.morningResults.text = LocalizationManager.Instance.GetText(successTextKey);
+                    break;
+                case ActivitiesManager.EventSchedule.Afternoon:
+                    ResultsOfTheDay.Instance.afternoonResults.text = LocalizationManager.Instance.GetText(successTextKey);
+                    break;
+                case ActivitiesManager.EventSchedule.Evening:
+                    ResultsOfTheDay.Instance.eveningResults.text = LocalizationManager.Instance.GetText(successTextKey);
+                    break;
+                case ActivitiesManager.EventSchedule.Date:
+                    ResultsOfTheDay.Instance.dateResults.text = LocalizationManager.Instance.GetText(successTextKey);
+                    break;
+            }
+        }
+        else
+        {
+            switch (schedule)
+            {
+                case ActivitiesManager.EventSchedule.Morning:
+                    ResultsOfTheDay.Instance.morningResults.text = LocalizationManager.Instance.GetText(failureTextKey);
+                    break;
+                case ActivitiesManager.EventSchedule.Afternoon:
+                    ResultsOfTheDay.Instance.afternoonResults.text = LocalizationManager.Instance.GetText(failureTextKey);
+                    break;
+                case ActivitiesManager.EventSchedule.Evening:
+                    ResultsOfTheDay.Instance.eveningResults.text = LocalizationManager.Instance.GetText(failureTextKey);
+                    break;
+                case ActivitiesManager.EventSchedule.Date:
+                    ResultsOfTheDay.Instance.dateResults.text = LocalizationManager.Instance.GetText(failureTextKey);
+                    break;
+            }
+        }
+
     }
 }
 
@@ -160,23 +208,30 @@ public class GEventCondition
             value = (int)PlayerManager.Instance.GetFieldValue(paramValue);
         }
 
+        bool _condition = true;
 
         switch (condition)
         {
             case ConditionType.Equals:
-                return (this.value == (int)actualValue);
+                _condition = (this.value == (int)actualValue);
+                break;
             case ConditionType.Not_equals:
-                return (this.value != (int)actualValue);
+                _condition = (this.value != (int)actualValue);
+                break;
             case ConditionType.Bigger_than:
-                return ((int)actualValue > this.value);
+                _condition = ((int)actualValue > this.value);
+                break;
             case ConditionType.Smaller_than:
-                return ((int)actualValue < this.value);
+                _condition = ((int)actualValue < this.value);
+                break;
             case ConditionType.Random:
-                Debug.Log("value: " + value + "> random:" + (int)(Random.value * 100f) + "/ condition  is: " + (value > (Random.value * 100)));
-                return (value > (int)(Random.value * 100f));
-
+                int random = (int)(Random.value * 100f);
+                Debug.Log("value: " + value + "> random:" + random + "/ condition  is: " + (value > random));
+                _condition = (value > random);
+                break;
         }
-        return false;
+        return _condition;
+
     }
 }
 

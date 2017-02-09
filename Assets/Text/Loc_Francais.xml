@@ -140,6 +140,7 @@
   <text key="B_LAUNCH_DAY">C'est parti!</text> 
   <text key="B_CONFIRM">Confirmer</text>   
   <text key="B_CANCEL">Annuler</text>   
+  <text key="B_CLOSE">Fermer</text>  
   <text key="B_RESET_GAME">Reset le jeu</text>   
   <text key="B_CHANGE_LANGUAGE">Changer Langue</text>  
 
@@ -174,13 +175,122 @@
   <text key="B_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
   <text key="B_DOCTOR_MASSAGE">Kine, massage: 50€</text>
 
-  <text key="B_PARTY">Aller en boite</text>
+  <text key="B_PARTY">Aller en boite: 40€</text>
   <text key="B_SHAVE">Se raser</text>
   <text key="B_GLEE">Voir Episode de Glee</text>
   <text key="B_PORN">Regarder du porno</text>
 
      <!-- Tips -->
   <text key="T_INFORMATION">Informations</text>
+  <text key="T_EDIT_PROFILE">Informations</text>
+  <text key="T_LAUNCH_DAY">Informations</text>
+
+  <text key="T_PRETTY_FACE">Visage: </text>
+  <text key="T_DICK_SIZE">Taille bite: </text>
+  <text key="T_ASS_ENDURANCE">Plaisir des fesses: </text>
+  <text key="T_ORAL_TALENT">Talent oral: </text>
+  <text key="T_BODY_FAT">Body Fat: </text>
+  <text key="T_BODY_MUSCLES">Muscles: </text>
+  <text key="T_BODY_HAIR">Poils: </text>
+  <text key="T_SYMPATHY">Sympathie: </text>
+  <text key="T_INTELLIGENCE">Intelligence: </text>
+  <text key="T_SEX_STAMINA">Sex Stamina: </text>
+  <text key="T_SEXINESS">Sex-appeal: </text>
+  <text key="T_STATE">État</text>
+  <text key="T_SALARY">Salaire: </text>
+  <text key="T_FATIGUE">Fatigue: </text>
+  <text key="T_SELF_CONFIDENCE">Self Confidence: </text>
+  <text key="T_MONEY">Argent: </text>
+  <text key="T_SEX_COUNT">Sex compte: </text>
+  <text key="T_DAYS_LEFT">Jours/Circuit: </text>
+
+  <text key="T_GYM">Aller à la CMG</text>
+  <text key="T_GYM_STRENGTH">Program de force: 50€</text>
+  <text key="T_GYM_FITNESS">Fitness: 50€</text>
+  <text key="T_GYM_POLE_DANCE">Pole Dance: 100€</text>
+  <text key="T_GYM_CROSS_FIT">CrossFit: 120€</text>
+
+  <text key="T_SAUNA">Aller au Suncity Sauna</text>
+  <text key="T_SAUNA_RELAX">Se relâcher: 50€</text>
+  <text key="T_SAUNA_DARK_ROOM">Darkroom: 50€</text>
+
+  <text key="T_WORK">Aller au travail</text>
+  <text key="T_WORK_HARD">Work Hard</text>
+  <text key="T_WORK_MUSIC">Écouter Fifth Harmony</text>
+  <text key="T_WORK_RAISE">Demander augmentation</text>
+
+  <text key="T_LE_MARAIS">Visiter le Marais</text>
+  <text key="T_LE_MARAIS_SHOPPING">faire des courses</text>
+  <text key="T_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
+  <text key="T_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
+  <text key="T_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
+
+  <text key="T_VIDEOGAMES">Joueur jeu vidéo</text>
+  <text key="T_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
+  <text key="T_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
+  <text key="T_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
+
+  <text key="T_DOCTOR">Visiter le Docteur</text>
+  <text key="T_DOCTOR_BLOOD_TEST">Test dépistage</text>
+  <text key="T_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
+  <text key="T_DOCTOR_MASSAGE">Kine, massage: 50€</text>
+
+  <text key="T_PARTY">Aller en boite: 40€</text>
+  <text key="T_SHAVE">Se raser</text>
+  <text key="T_GLEE">Voir Episode de Glee</text>
+  <text key="T_PORN">Regarder du porno</text>
+
+
+
+     <!-- Results -->
+  <text key="R_RESULTS">Results</text>
+  <text key="R_S_GYM_STRENGTH">Program de force: 50€</text>
+  <text key="R_S_GYM_FITNESS">Fitness: 50€</text>
+  <text key="R_S_GYM_POLE_DANCE">Pole Dance: 100€</text>
+  <text key="R_S_GYM_CROSS_FIT">CrossFit: 120€</text>
+  <text key="R_S_SAUNA_RELAX">Se relâcher: 50€</text>
+  <text key="R_S_SAUNA_DARK_ROOM">Darkroom: 50€</text>
+  <text key="R_S_WORK_HARD">Work Hard</text>
+  <text key="R_S_WORK_MUSIC">Écouter Fifth Harmony</text>
+  <text key="R_S_WORK_RAISE">Demander augmentation</text>
+  <text key="R_S_LE_MARAIS_SHOPPING">faire des courses</text>
+  <text key="R_S_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
+  <text key="R_S_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
+  <text key="R_S_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
+  <text key="R_S_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
+  <text key="R_S_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
+  <text key="R_S_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
+  <text key="R_S_DOCTOR_BLOOD_TEST">Test dépistage</text>
+  <text key="R_S_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
+  <text key="R_S_DOCTOR_MASSAGE">Kine, massage: 50€</text>
+  <text key="R_S_PARTY">Aller en boite</text>
+  <text key="R_S_SHAVE">Se raser</text>
+  <text key="R_S_GLEE">Voir Episode de Glee</text>
+  <text key="R_S_PORN">Regarder du porno</text>
+
+  <text key="R_F_GYM_STRENGTH">Program de force: 50€</text>
+  <text key="R_F_GYM_FITNESS">Fitness: 50€</text>
+  <text key="R_F_GYM_POLE_DANCE">Pole Dance: 100€</text>
+  <text key="R_F_GYM_CROSS_FIT">CrossFit: 120€</text>
+  <text key="R_F_SAUNA_RELAX">Se relâcher: 50€</text>
+  <text key="R_F_SAUNA_DARK_ROOM">Darkroom: 50€</text>
+  <text key="R_F_WORK_HARD">Work Hard</text>
+  <text key="R_F_WORK_MUSIC">Écouter Fifth Harmony</text>
+  <text key="R_F_WORK_RAISE">Demander augmentation</text>
+  <text key="R_F_LE_MARAIS_SHOPPING">faire des courses</text>
+  <text key="R_F_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
+  <text key="R_F_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
+  <text key="R_F_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
+  <text key="R_F_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
+  <text key="R_F_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
+  <text key="R_F_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
+  <text key="R_F_DOCTOR_BLOOD_TEST">Test dépistage</text>
+  <text key="R_F_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
+  <text key="R_F_DOCTOR_MASSAGE">Kine, massage: 50€</text>
+  <text key="R_F_PARTY">Aller en boite</text>
+  <text key="R_F_SHAVE">You cut yourself! Sexiness -1</text>
+  <text key="R_F_GLEE">Kurt et Blaine ont eu un conflit dans l'episode d'aujourd'hui. Self confidence -1</text>
+  <text key="R_F_PORN">Regarder du porno</text>
 
 
      <!-- Misc -->
@@ -200,7 +310,7 @@
   <text key="POINTS_USED_NOTE">(Note: tu ne seras pas capable de changer la nature une fois choisi)</text>
   <text key="CONFIRM_MAX_POINTS_TRUE">Tu ne seras pas capable de changer la nature une fois choisi. Est-tu sûr de confirmer? </text>
   <text key="CONFIRM_MAX_POINTS_FALSE">Tu n'as pas utilisé tous les points. Tu ne seras pas capable de changer la nature une fois choisi, donc tu vas jouer désavantagé. Est-tu sûr de confirmer? </text>
-
+ <text key="CONFIRM_SURE">Confirmer?</text>
 
 
 </Language>
