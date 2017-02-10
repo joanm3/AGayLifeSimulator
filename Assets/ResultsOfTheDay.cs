@@ -9,6 +9,7 @@ public class ResultsOfTheDay : Singleton<ResultsOfTheDay>
     public Text afternoonResults;
     public Text eveningResults;
     public Text dateResults;
+    public Text dateResults2;
 
 
     void Start()

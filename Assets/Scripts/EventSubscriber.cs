@@ -162,6 +162,8 @@ public class GEvent
                 case ActivitiesManager.EventSchedule.Date:
                     BlinderManager.Instance.resultsText.text = LocalizationManager.Instance.GetText(successTextKey);
                     ResultsOfTheDay.Instance.dateResults.text = LocalizationManager.Instance.GetText(successTextKey);
+                    ResultsOfTheDay.Instance.dateResults2.text = LocalizationManager.Instance.GetText(successTextKey);
+
                     break;
             }
         }
@@ -181,6 +183,7 @@ public class GEvent
                 case ActivitiesManager.EventSchedule.Date:
                     BlinderManager.Instance.resultsText.text = LocalizationManager.Instance.GetText(failureTextKey);
                     ResultsOfTheDay.Instance.dateResults.text = LocalizationManager.Instance.GetText(failureTextKey);
+                    ResultsOfTheDay.Instance.dateResults2.text = LocalizationManager.Instance.GetText(failureTextKey);
 
                     break;
             }

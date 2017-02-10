@@ -180,165 +180,165 @@
   <text key="B_PORN">Watch Porn</text>
 
      <!-- Tips -->
-  <text key="T_INFORMATION">Informations</text>
-  <text key="T_EDIT_PROFILE">Informations</text>
-  <text key="T_LAUNCH_DAY">Informations</text>
+  <text key="T_INFORMATION">Information</text>
+  <text key="T_EDIT_PROFILE">This is you. Click to change your appareance.</text>
+  <text key="T_LAUNCH_DAY">Click here once you have planned your day.</text>
 
-  <text key="T_PRETTY_FACE">Visage: </text>
-  <text key="T_DICK_SIZE">Taille bite: </text>
-  <text key="T_ASS_ENDURANCE">Plaisir des fesses: </text>
-  <text key="T_ORAL_TALENT">Talent oral: </text>
-  <text key="T_BODY_FAT">Body Fat: </text>
-  <text key="T_BODY_MUSCLES">Muscles: </text>
-  <text key="T_BODY_HAIR">Poils: </text>
-  <text key="T_SYMPATHY">Sympathie: </text>
-  <text key="T_INTELLIGENCE">Intelligence: </text>
-  <text key="T_SEX_STAMINA">Sex Stamina: </text>
-  <text key="T_SEXINESS">Sex-appeal: </text>
-  <text key="T_STATE">État</text>
-  <text key="T_SALARY">Salaire: </text>
-  <text key="T_FATIGUE">Fatigue: </text>
-  <text key="T_SELF_CONFIDENCE">Self Confidence: </text>
-  <text key="T_MONEY">Argent: </text>
-  <text key="T_SEX_COUNT">Sex compte: </text>
-  <text key="T_DAYS_LEFT">Jours/Circuit: </text>
+  <text key="T_PRETTY_FACE">Mirror, mirror, on the wall, who's the sexiest bitch of them all?</text>
+  <text key="T_DICK_SIZE">Who says size don't matter?</text>
+  <text key="T_ASS_ENDURANCE">I always post selfies of my ass on Instagram. </text>
+  <text key="T_ORAL_TALENT">I'm about to get into this girls. </text>
+  <text key="T_BODY_FAT">Sugar mmhhhh</text>
+  <text key="T_BODY_MUSCLES">Work it work it out. </text>
+  <text key="T_BODY_HAIR">Bear is coming back with power power. </text>
+  <text key="T_SYMPATHY">I am a successfull gal. </text>
+  <text key="T_INTELLIGENCE">I prefer to stay home and read.</text>
+  <text key="T_SEX_STAMINA">Horse master </text>
+  <text key="T_SEXINESS">People love me for what i am. </text>
+  <text key="T_STATE">Yeah sure</text>
+  <text key="T_SALARY">If you wanna be rich, you have to be a bitch.</text>
+  <text key="T_FATIGUE">If you are too tired you won't be able to do some stuff.</text>
+  <text key="T_SELF_CONFIDENCE">Cocky boy... I love myself</text>
+  <text key="T_MONEY">Very important for buying steroids. Easy to get when you give oral sex.</text>
+  <text key="T_SEX_COUNT">My highscore. </text>
+  <text key="T_DAYS_LEFT">The sexiest guys will be in town. I have to show them who's bossy. </text>
 
-  <text key="T_GYM">Aller à la CMG</text>
-  <text key="T_GYM_STRENGTH">Program de force: 50€</text>
-  <text key="T_GYM_FITNESS">Fitness: 50€</text>
-  <text key="T_GYM_POLE_DANCE">Pole Dance: 100€</text>
-  <text key="T_GYM_CROSS_FIT">CrossFit: 120€</text>
+  <text key="T_GYM">Go to the gym, go to the gym, go to the gym. Is good for your body. </text>
+  <text key="T_GYM_STRENGTH">Price: 50€\nBody Fat -1\nBody Muscles +2\n Fatigue +3\n</text>
+  <text key="T_GYM_FITNESS">Price: 50€\nBody Fat -2\nBody Muscles +1\n Fatigue +3\n</text>
+  <text key="T_GYM_POLE_DANCE">Price: 100€\nBody Fat -2\nBody Muscles +1\n Fatigue +4\nSexiness +2</text>
+  <text key="T_GYM_CROSS_FIT">Price: 120€\nBody Fat -1\nBody Muscles +5\n Fatigue +6\n Self Confidence +2</text>
 
-  <text key="T_SAUNA">Aller au Suncity Sauna</text>
-  <text key="T_SAUNA_RELAX">Se relâcher: 50€</text>
-  <text key="T_SAUNA_DARK_ROOM">Darkroom: 50€</text>
+  <text key="T_SAUNA">That's shady, girl</text>
+  <text key="T_SAUNA_RELAX">Price: 50€\nFatigue -3\n Self Confidence +1</text>
+  <text key="T_SAUNA_DARK_ROOM">Price: 50€\nFatigue -2\n Self Confidence +1 \nPossiblity of casual sex yeah</text>
 
-  <text key="T_WORK">Aller au travail</text>
-  <text key="T_WORK_HARD">Work Hard</text>
-  <text key="T_WORK_MUSIC">Écouter Fifth Harmony</text>
-  <text key="T_WORK_RAISE">Demander augmentation</text>
+  <text key="T_WORK">You work in Zara shop downtown selling wonderful stuff</text>
+  <text key="T_WORK_HARD">Don't fuck it up. \nFatigue +2 \nGet Salary</text>
+  <text key="T_WORK_MUSIC">Listen to Fifth Harmony all day and do nothing. \nFatigue +1 \nGet Salary </text>
+  <text key="T_WORK_RAISE">Ask for a raise 'cause you the best bich around. Fatigue +3\n Get Salary\n Possibility to Get a Raise</text>
 
-  <text key="T_LE_MARAIS">Visiter le Marais</text>
-  <text key="T_LE_MARAIS_SHOPPING">faire des courses</text>
-  <text key="T_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
-  <text key="T_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
-  <text key="T_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
+  <text key="T_LE_MARAIS">Go to the gay area of your city. </text>
+  <text key="T_LE_MARAIS_SHOPPING">Buy the best stuff around. NOT APPLIED YET.</text>
+  <text key="T_LE_MARAIS_MUSEUM">Watch naked men with others without feeling weirdo.\nPrice 20€\nIntelligence +3</text>
+  <text key="T_LE_MARAIS_BEAUTY">It's good for your skin.\nPrice 100€\nFatigue -2\nSexiness +2</text>
+  <text key="T_LE_MARAIS_TATTOO">The circuit guys are gonna love it.\nPrice 500€ \nSexiness +15 \n Intelligence -2</text>
 
-  <text key="T_VIDEOGAMES">Joueur jeu vidéo</text>
-  <text key="T_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
-  <text key="T_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
-  <text key="T_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
+  <text key="T_VIDEOGAMES">Gaymers will rule the world</text>
+  <text key="T_VIDEOGAMES_THE_WITNESS">Are you smarter than Jonathan Blowjob?\nIntelligence +1</text>
+  <text key="T_VIDEOGAMES_THE_SIMS">Get a life... or play the sims instead\nSympathy +1</text>
+  <text key="T_VIDEOGAMES_DARK_SOULS">Geek...\nSexiness -1, Fatigue +1, Body Fat +1, Body Hair = Hairy, etc.</text>
 
-  <text key="T_DOCTOR">Visiter le Docteur</text>
-  <text key="T_DOCTOR_BLOOD_TEST">Test dépistage</text>
-  <text key="T_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
-  <text key="T_DOCTOR_MASSAGE">Kine, massage: 50€</text>
+  <text key="T_DOCTOR">Even if you hate it, you should visit your doctor. She's nice.</text>
+  <text key="T_DOCTOR_BLOOD_TEST">Blood Test. NOT APPLIED YET.</text>
+  <text key="T_DOCTOR_PSICOTHERAPIST">It gets better.\nPrice 60€ \nSelf Confidence +3</text>
+  <text key="T_DOCTOR_MASSAGE">Get a massage. But without happy ending.\nPrice 60€\nFatigue -5</text>
 
-  <text key="T_PARTY">Aller en boite: 40€</text>
-  <text key="T_SHAVE">Se raser</text>
-  <text key="T_GLEE">Voir Episode de Glee</text>
-  <text key="T_PORN">Regarder du porno</text>
+  <text key="T_PARTY">It's party time, bitches.\nPrice 40€\nSympathy +3\nFatigue +1\n Possibility to fuck someone tonight.</text>
+  <text key="T_SHAVE">Gentlemen prefer blondes\nBody Hair = Smooth</text>
+  <text key="T_GLEE">Will Rachel win Nationals? Or Kurt sing a new Celine Dion song?\nSelf Confidence +1</text>
+  <text key="T_PORN">Eurocreme or Men.com tonight?\n Sex Stamina +1\n Fatigue -1</text>
 
 
      <!-- Results -->
    <text key="R_RESULTS">Results</text>
-  <text key="R_S_GYM_STRENGTH">Program de force: 50€</text>
-  <text key="R_S_GYM_FITNESS">Fitness: 50€</text>
-  <text key="R_S_GYM_POLE_DANCE">Pole Dance: 100€</text>
-  <text key="R_S_GYM_CROSS_FIT">CrossFit: 120€</text>
-  <text key="R_S_SAUNA_RELAX">Se relâcher: 50€</text>
-  <text key="R_S_SAUNA_DARK_ROOM">Darkroom: 50€</text>
-  <text key="R_S_WORK_HARD">Work Hard</text>
-  <text key="R_S_WORK_MUSIC">Écouter Fifth Harmony</text>
-  <text key="R_S_WORK_RAISE">Demander augmentation</text>
-  <text key="R_S_LE_MARAIS_SHOPPING">faire des courses</text>
-  <text key="R_S_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
-  <text key="R_S_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
-  <text key="R_S_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
-  <text key="R_S_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
-  <text key="R_S_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
-  <text key="R_S_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
-  <text key="R_S_DOCTOR_BLOOD_TEST">Test dépistage</text>
-  <text key="R_S_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
-  <text key="R_S_DOCTOR_MASSAGE">Kine, massage: 50€</text>
-  <text key="R_S_PARTY">Aller en boite</text>
-  <text key="R_S_SHAVE">Se raser</text>
-  <text key="R_S_GLEE">Voir Episode de Glee</text>
-  <text key="R_S_PORN">Regarder du porno</text>
+  <text key="R_S_GYM_STRENGTH">Strength: You have trained A LOT. You feel way better with yourself.</text>
+  <text key="R_S_GYM_FITNESS">Fitness: Your ass looks awesome honey.</text>
+  <text key="R_S_GYM_POLE_DANCE">Pole Dance: Now you are ready to show your skills in the next Doctor Love!</text>
+  <text key="R_S_GYM_CROSS_FIT">Cross Fit: It was tough, bitch, but the just think on how awesome the cross fit trainer is.</text>
+  <text key="R_S_SAUNA_RELAX">Relax: You had an amazing time at the saune. The guys were old and fat... and they were all watching at you THE WHOLE TIME.</text>
+  <text key="R_S_SAUNA_DARK_ROOM">Dark Room: You went to the darkroom An tattoed italian guy showed you how to pray. Big Time!</text>
+  <text key="R_S_WORK_HARD">Work: Today at work it was awesome. Not really but your boss was happy and you didn't need to blow him.</text>
+  <text key="R_S_WORK_MUSIC">Work: You dont gotta do the work work work work work, etc.</text>
+  <text key="R_S_WORK_RAISE">Work: You are awesome gal! you got a raise, you worth it!</text>
+  <text key="R_S_LE_MARAIS_SHOPPING">Shopping: You bought a new dildo.</text>
+  <text key="R_S_LE_MARAIS_MUSEUM">Museum: Caravaggio, la Maja desnuda, Picasso... La Maja vestida. Penes con pincel.</text>
+  <text key="R_S_LE_MARAIS_BEAUTY">Beauty: You are the new Kardashian!</text>
+  <text key="R_S_LE_MARAIS_TATTOO">Tattoo: You tattoed a dirty pig in your ass with the words "give it to me baby"</text>
+  <text key="R_S_VIDEOGAMES_THE_WITNESS">The Witness: why is there a film of Tarkovski in this game? whatever...</text>
+  <text key="R_S_VIDEOGAMES_THE_SIMS">The Sims: All your sims died today, because you burned thir house down.</text>
+  <text key="R_S_VIDEOGAMES_DARK_SOULS">Dark Souls: You passed your first boss! congratulation... yeaahy!</text>
+  <text key="R_S_DOCTOR_BLOOD_TEST">Blood Test: You passed the test and you are HIV-, keep taking precaution on your sex relations.</text>
+  <text key="R_S_DOCTOR_PSICOTHERAPIST">Psycho: You discovered it's all because of the parents.</text>
+  <text key="R_S_DOCTOR_MASSAGE">Massage: It feels good, just like honey.</text>
+  <text key="R_S_PARTY">Party: You partied hard babe, and you fucked the barman. you should be proud of yourself.</text>
+  <text key="R_S_SHAVE">Shave: Now you are like a baby again!</text>
+  <text key="R_S_GLEE">Glee: Rachel sung one of your favorite songs and the bullies of the school were killed by a whale! awesome.</text>
+  <text key="R_S_PORN">Porn: Very educational.</text>
 
-  <text key="R_F_GYM_STRENGTH">Program de force: 50€</text>
-  <text key="R_F_GYM_FITNESS">Fitness: 50€</text>
-  <text key="R_F_GYM_POLE_DANCE">Pole Dance: 100€</text>
-  <text key="R_F_GYM_CROSS_FIT">CrossFit: 120€</text>
-  <text key="R_F_SAUNA_RELAX">Se relâcher: 50€</text>
-  <text key="R_F_SAUNA_DARK_ROOM">Darkroom: 50€</text>
-  <text key="R_F_WORK_HARD">Work Hard</text>
-  <text key="R_F_WORK_MUSIC">Écouter Fifth Harmony</text>
-  <text key="R_F_WORK_RAISE">Demander augmentation</text>
-  <text key="R_F_LE_MARAIS_SHOPPING">faire des courses</text>
-  <text key="R_F_LE_MARAIS_MUSEUM">Musée Pompidou: 20€</text>
-  <text key="R_F_LE_MARAIS_BEAUTY">Salon de beauté: 100€</text>
-  <text key="R_F_LE_MARAIS_TATTOO">Faire tatouage: 500€</text>
-  <text key="R_F_VIDEOGAMES_THE_WITNESS">Jouer: The Witness</text>
-  <text key="R_F_VIDEOGAMES_THE_SIMS">Jouer: The Sims</text>
-  <text key="R_F_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls</text>
-  <text key="R_F_DOCTOR_BLOOD_TEST">Test dépistage</text>
-  <text key="R_F_DOCTOR_PSICOTHERAPIST">Psychologue: 80€</text>
-  <text key="R_F_DOCTOR_MASSAGE">Kine, massage: 50€</text>
-  <text key="R_F_PARTY">Aller en boite</text>
-  <text key="R_F_SHAVE">You cut yourself! Sexiness -1</text>
-  <text key="R_F_GLEE">Kurt et Blaine ont eu un conflit dans l'episode d'aujourd'hui. Self confidence -1</text>
-  <text key="R_F_PORN">Regarder du porno</text>
+  <text key="R_F_GYM_STRENGTH">Program de force failed</text>
+  <text key="R_F_GYM_FITNESS">Fitness failed</text>
+  <text key="R_F_GYM_POLE_DANCE">Pole Dance failed</text>
+  <text key="R_F_GYM_CROSS_FIT">CrossFit failed</text>
+  <text key="R_F_SAUNA_RELAX">Se relâcher failed</text>
+  <text key="R_F_SAUNA_DARK_ROOM">Dark Room: Nobody cared about you because you are disguisting.\nExtra: Self Confidence -2</text>
+  <text key="R_F_WORK_HARD"></text>
+  <text key="R_F_WORK_MUSIC">Work: I love Fifht Harmony. Why did that gal leave the groupe!!!? (angry face)</text>
+  <text key="R_F_WORK_RAISE">Work: Your boss told you that you only listen to Fifth Harmony all day long and do nothing. Now you earn less money :( </text>
+  <text key="R_F_LE_MARAIS_SHOPPING">faire des courses failed</text>
+  <text key="R_F_LE_MARAIS_MUSEUM">Musée Pompidou failed</text>
+  <text key="R_F_LE_MARAIS_BEAUTY">Salon de beaute failed</text>
+  <text key="R_F_LE_MARAIS_TATTOO">Faire tatouage failed</text>
+  <text key="R_F_VIDEOGAMES_THE_WITNESS">Jouer: The Witness failed</text>
+  <text key="R_F_VIDEOGAMES_THE_SIMS">Jouer: The Sims failed</text>
+  <text key="R_F_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls failed</text>
+  <text key="R_F_DOCTOR_BLOOD_TEST">I am sorry to give you the bad news... You are HIV+. Visit your doctor regularly and take care of your health. </text>
+  <text key="R_F_DOCTOR_PSICOTHERAPIST">psico failed</text>
+  <text key="R_F_DOCTOR_MASSAGE">Kine, massafe failed.</text>
+  <text key="R_F_PARTY">You danced alone all night long and came back home. No sex today, but you still have your pikachu teddy bear that loves you inconditonally!</text>
+  <text key="R_F_SHAVE">You cut yourself! \n Extra: Sexiness -1</text>
+  <text key="R_F_GLEE">Kurt and Blaine ended their relationship. You feel sad. \n Extra: Self confidence -1</text>
+  <text key="R_F_PORN">Regarder du porno failed</text>
 
     <!-- Blinder -->
   <text key="BL_DESCRIPTION">Description: </text>
-  <text key="BL_TALK">Parler</text>
-  <text key="BL_SEND_DICK_PIC">Env. photo queue</text>
-  <text key="BL_BLOCK">bloquer</text> 
-  <text key="BL_DATE">Rencontrer</text> 
-  <text key="BL_WAIT">Attendre a demain...</text> 
-  <text key="BL_NO_DATE">Tu n'as pas rencontré des mecs aujourd'hui. Essaye un autre jour...</text> 
+  <text key="BL_TALK">Talk</text>
+  <text key="BL_SEND_DICK_PIC">Send dick pic</text>
+  <text key="BL_BLOCK">block</text> 
+  <text key="BL_DATE">Meet him!</text> 
+  <text key="BL_WAIT">Wait till tomorrow...</text> 
+  <text key="BL_NO_DATE">You haven't met anyone today. Try again next time...</text> 
 
 
-  <text key="BL_G1_NAME">XXL qui vide?</text>  
-  <text key="BL_G1_DESCRIPTION">chc bon suceur pour se soir</text> 
-  <text key="BL_G1_S">success</text> 
-  <text key="BL_G1_F">failure</text> 
+  <text key="BL_G1_NAME">XXL who sucks?</text>  
+  <text key="BL_G1_DESCRIPTION">looking for milker for tonight</text> 
+  <text key="BL_G1_S">Your mouth is a real machine! The guy had a great time. He event made a video and then post it at Pornhub.com</text> 
+  <text key="BL_G1_F">Ok girl. You went down there. You really tried. That was a snake you weren't ready to conquer. You should train more for next time...</text> 
 
   <text key="BL_G2_NAME">CoupleCool</text>  
-  <text key="BL_G2_DESCRIPTION">threesome avec mec cool et musculaire. pas effimines.</text> 
-  <text key="BL_G2_S">success</text> 
-  <text key="BL_G2_F">failure</text>
+  <text key="BL_G2_DESCRIPTION">Threesome with hot guy. Only gym guys and not girly likes... hate them</text> 
+  <text key="BL_G2_S">The guys were russian and kept asking for more. Good job girl!</text> 
+  <text key="BL_G2_F">Ok you should have thought better before sending pics of another man with awesome abs. It didn't pass and they sent you away... You need to keep in shape man!</text>
 
   <text key="BL_G3_NAME">masseur</text>  
   <text key="BL_G3_DESCRIPTION">j'offre massage et je suce apres pour 20€</text> 
-  <text key="BL_G3_S">success</text> 
-  <text key="BL_G3_F">failure</text> 
+  <text key="BL_G3_S">The massage was awesome, the guy disguisting, but you earned 20 euros!</text> 
+  <text key="BL_G3_F">The guy tried to poison you and then eat you. Lucky for you you brought a huge dildo and punched him with that. You then ran away.</text> 
 
   <text key="BL_G4_NAME">turist</text>  
   <text key="BL_G4_DESCRIPTION">visiting for a few days looking for fun. Only for hung guys</text> 
-  <text key="BL_G4_S">success</text> 
-  <text key="BL_G4_F">failure</text> 
+  <text key="BL_G4_S">Actually the pics the guy sent you werent real. When you discovered his sex you had a big surprise, actually a small surprise: his dick was microscopic!"This is not what we arranged"m you said and left home.</text> 
+  <text key="BL_G4_F">Actually the pics the guy sent you werent real. When you discovered his sex you had a big surprise, actually a small surprise: his dick was microscopic!"This is not what we arranged"m you said and left home.</text> 
 
   <text key="BL_G5_NAME">vieux photos</text>  
-  <text key="BL_G5_DESCRIPTION">je fais des seances de photos et apres je baise avec les mecs. je paye 50€</text> 
-  <text key="BL_G5_S">success</text> 
-  <text key="BL_G5_F">failure</text> 
+  <text key="BL_G5_DESCRIPTION">I am photographer. I pay guys to photograph them and try to touch their sex. I pay 50€</text> 
+  <text key="BL_G5_S">You discovered that you love disguisting daddies who are rich! You had a great time.</text> 
+  <text key="BL_G5_F">His dick was huge, but the pics were sooo bad... choose a better photographer another time.</text> 
 
   <text key="BL_G6_NAME">mec normal</text>  
   <text key="BL_G6_DESCRIPTION">si je suis normal, pourquoi je mets cette photo de profile? chc mecs sympas</text> 
-  <text key="BL_G6_S">success</text> 
-  <text key="BL_G6_F">failure</text>
+  <text key="BL_G6_S">You had a great time! He was so funny and you had great sex. You would be interted in him if he didn't have a boyfriend.</text> 
+  <text key="BL_G6_F">Actually you are a classy bitch unable to connect with others. The guy was serious but you only wanted sex. He sashed you away</text>
 
   <text key="BL_G7_NAME">nike</text>  
-  <text key="BL_G7_DESCRIPTION">tu aimes te faire sniffer skets sox? pour mecs endurants</text> 
-  <text key="BL_G7_S">success</text> 
-  <text key="BL_G7_F">failure</text>  
+  <text key="BL_G7_DESCRIPTION">love socks and big shoes. I lick your feet. Only for endurant guys.  </text> 
+  <text key="BL_G7_S">You got it girl, had a great time sucking his socks, feet and others.</text> 
+  <text key="BL_G7_F">You discovered that you are precocius and came too fast. The guy wasnt happy and throw at you all his shoes to your head. It hurt.</text>  
 
   <text key="BL_G8_NAME">french arab</text>  
-  <text key="BL_G8_DESCRIPTION">jaime les mecs gros et poilus</text> 
-  <text key="BL_G8_S">success</text> 
-  <text key="BL_G8_F">failure</text>
+  <text key="BL_G8_DESCRIPTION">for fat and hairy guys</text> 
+  <text key="BL_G8_S">I wont descrive the scene, sorry. But you had fun whatsoever. </text> 
+  <text key="BL_G8_F">He didn't like you because you didn't have enough hair.</text>
 
      <!-- Misc -->
   <text key=""> </text>
@@ -352,6 +352,8 @@
   <text key="MORNING">Morning</text>
   <text key="AFTERNOON">Afternoon</text>
   <text key="EVENING">Evening</text>
+  <text key="DATE">Date</text>
+
   <text key="SELECT_NATURE">Select your nature</text>
   <text key="POINTS_USED">Points Used: </text>
   <text key="POINTS_USED_NOTE">(You won't be able to change this later, so choose wisely!)</text>
