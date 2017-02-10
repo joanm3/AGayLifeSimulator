@@ -91,6 +91,8 @@ public class LocalizationManager : Singleton<LocalizationManager>
                 {
                     if (textKeyValue.key == key)
                     {
+                        string value = textKeyValue.value;
+                        value = value.Replace("\\n", "\n");
                         return textKeyValue.value;
                     }
 

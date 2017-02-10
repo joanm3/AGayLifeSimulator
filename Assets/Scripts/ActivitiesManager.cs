@@ -54,7 +54,7 @@ public class ActivitiesManager : MonoBehaviour
         if (OnAfternoon != null) { OnAfternoon(); }
         if (OnNight != null) { OnNight(); }
 
-        if(BlinderManager.Instance.HadADateToday())
+        if (BlinderManager.Instance.HadADateToday())
         {
             ResultsOfTheDay.Instance.dateResults.text = LocalizationManager.Instance.GetText("BL_NO_DATE");
         }
@@ -76,7 +76,8 @@ public class ActivitiesManager : MonoBehaviour
         if (UIManager.Instance == null)
             UIManager.Init();
         UIManager.Instance.UpdateAllUI();
-
+        if (SoundManager.Instance.isPlayingWorkMusic)
+            SoundManager.Instance.ReloadSong();
 
     }
 
