@@ -171,8 +171,8 @@
 
   <text key="B_DOCTOR">Visit the Doctor</text>
   <text key="B_DOCTOR_BLOOD_TEST">Do blood test</text>
-  <text key="B_DOCTOR_PSICOTHERAPIST">Psychologist: 80€</text>
-  <text key="B_DOCTOR_MASSAGE">Get a massage: 50€</text>
+  <text key="B_DOCTOR_PSICOTHERAPIST">Psychologist: 60€</text>
+  <text key="B_DOCTOR_MASSAGE">Get a massage: 60€</text>
 
   <text key="B_PARTY">Go Partying: 40€</text>
   <text key="B_SHAVE">Shave</text>
@@ -183,6 +183,8 @@
   <text key="T_INFORMATION">Information</text>
   <text key="T_EDIT_PROFILE">This is you. Click to change your appareance.</text>
   <text key="T_LAUNCH_DAY">Click here once you have planned your day.</text>
+  <text key="T_BLINDER">Your favorite app to meet guys. Easy sex for everyone. Isn't your life wonderful?</text>
+
 
   <text key="T_PRETTY_FACE">Mirror, mirror, on the wall, who's the sexiest bitch of them all?</text>
   <text key="T_DICK_SIZE">Who says size don't matter?</text>
@@ -242,39 +244,87 @@
 
      <!-- Results -->
    <text key="R_RESULTS">Results</text>
-  <text key="R_S_GYM_STRENGTH">Strength: You have trained A LOT. You feel way better with yourself.</text>
-  <text key="R_S_GYM_FITNESS">Fitness: Your ass looks awesome honey.</text>
-  <text key="R_S_GYM_POLE_DANCE">Pole Dance: Now you are ready to show your skills in the next Doctor Love!</text>
-  <text key="R_S_GYM_CROSS_FIT">Cross Fit: It was tough, bitch, but the just think on how awesome the cross fit trainer is.</text>
-  <text key="R_S_SAUNA_RELAX">Relax: You had an amazing time at the saune. The guys were old and fat... and they were all watching at you THE WHOLE TIME.</text>
-  <text key="R_S_SAUNA_DARK_ROOM">Dark Room: You went to the darkroom An tattoed italian guy showed you how to pray. Big Time!</text>
-  <text key="R_S_WORK_HARD">Work: Today at work it was awesome. Not really but your boss was happy and you didn't need to blow him.</text>
-  <text key="R_S_WORK_MUSIC">Work: You dont gotta do the work work work work work, etc.</text>
-  <text key="R_S_WORK_RAISE">Work: You are awesome gal! you got a raise, you worth it!</text>
+  <text key="R_S_GYM_STRENGTH">Strength: You have trained A LOT. You feel way better with yourself.
+    -50€
+    Body Fat -1   Body Muscles +2
+    Fatigue +3</text>
+  <text key="R_S_GYM_FITNESS">Fitness: Your ass looks awesome honey.
+    -50€
+    Body Fat -2   Body Muscles +1
+    Fatigue +3</text>
+  <text key="R_S_GYM_POLE_DANCE">Pole Dance: Now you are ready to show your skills in the next Doctor Love!
+    -100€
+    Body Fat -2  Body Muscles +1
+    Fatigue +4   Sexiness +2</text>
+  <text key="R_S_GYM_CROSS_FIT">Cross Fit: It was tough, bitch, but the just think on how awesome the cross fit trainer is.
+    -120€
+    Body Fat -1   Body Muscles +5
+    Fatigue +6    Self Confidence +2</text>
+  <text key="R_S_SAUNA_RELAX">Relax: You had an amazing time at the saune. The guys were old and fat... and they were all watching at you THE WHOLE TIME.
+    -50€
+    Fatigue -3   Self Confidence +1</text>
+  <text key="R_S_SAUNA_DARK_ROOM">Dark Room: You went to the darkroom An tattoed italian guy showed you how to pray. Big Time!
+    -50€
+    Fatigue -2   Self Confidence +1 
+    Sex Count +Random</text>
+  <text key="R_S_WORK_HARD">Work: Today at work it was awesome. Not really but your boss was happy and you didn't need to blow him.
+    Fatigue +2 
+    +Salaire</text>
+  <text key="R_S_WORK_MUSIC">Work: You dont gotta do the work work work work work, etc.
+    Fatigue +1
+    +Salaire</text>
+  <text key="R_S_WORK_RAISE">Work: You are awesome gal! you got a raise, you worth it!
+    Fatigue +3
+    +Salary 
+    Salary is now better</text>
   <text key="R_S_LE_MARAIS_SHOPPING">Shopping: You bought a new dildo.</text>
-  <text key="R_S_LE_MARAIS_MUSEUM">Museum: Caravaggio, la Maja desnuda, Picasso... La Maja vestida. Penes con pincel.</text>
-  <text key="R_S_LE_MARAIS_BEAUTY">Beauty: You are the new Kardashian!</text>
-  <text key="R_S_LE_MARAIS_TATTOO">Tattoo: You tattoed a dirty pig in your ass with the words "give it to me baby"</text>
-  <text key="R_S_VIDEOGAMES_THE_WITNESS">The Witness: why is there a film of Tarkovski in this game? whatever...</text>
-  <text key="R_S_VIDEOGAMES_THE_SIMS">The Sims: All your sims died today, because you burned thir house down.</text>
-  <text key="R_S_VIDEOGAMES_DARK_SOULS">Dark Souls: You passed your first boss! congratulation... yeaahy!</text>
+  <text key="R_S_LE_MARAIS_MUSEUM">Museum: Caravaggio, la Maja desnuda, Picasso... La Maja vestida. Penes con pincel.
+    -20€
+    Intelligence +3</text>
+  <text key="R_S_LE_MARAIS_BEAUTY">Beauty: You are the new Kardashian!
+    -100€
+    Fatigue -2   Sexiness +2</text>
+  <text key="R_S_LE_MARAIS_TATTOO">Tattoo: You tattoed a dirty pig in your ass with the words "give it to me baby"
+    -500€ 
+    Sexiness +15   Intelligence -2</text>
+  <text key="R_S_VIDEOGAMES_THE_WITNESS">The Witness: why is there a film of Tarkovski in this game? whatever...
+    Intelligence +1</text>
+  <text key="R_S_VIDEOGAMES_THE_SIMS">The Sims: All your sims died today, because you burned thir house down.
+    Sympathy +1  </text>
+  <text key="R_S_VIDEOGAMES_DARK_SOULS">Dark Souls: You passed your first boss! congratulation... yeaahy!
+    Sexiness -1, Fatigue +1, Body Fat +1, Poils = Hairy...</text>
   <text key="R_S_DOCTOR_BLOOD_TEST">Blood Test: You passed the test and you are HIV-, keep taking precaution on your sex relations.</text>
-  <text key="R_S_DOCTOR_PSICOTHERAPIST">Psycho: You discovered it's all because of the parents.</text>
-  <text key="R_S_DOCTOR_MASSAGE">Massage: It feels good, just like honey.</text>
-  <text key="R_S_PARTY">Party: You partied hard babe, and you fucked the barman. you should be proud of yourself.</text>
-  <text key="R_S_SHAVE">Shave: Now you are like a baby again!</text>
-  <text key="R_S_GLEE">Glee: Rachel sung one of your favorite songs and the bullies of the school were killed by a whale! awesome.</text>
-  <text key="R_S_PORN">Porn: Very educational.</text>
+  <text key="R_S_DOCTOR_PSICOTHERAPIST">Psycho: You discovered it's all because of the parents.
+    -60€ 
+    Self Confidence +3</text>
+  <text key="R_S_DOCTOR_MASSAGE">Massage: It feels good, just like honey.
+    -60€
+    Fatigue -5</text>
+  <text key="R_S_PARTY">Party: You partied hard babe, and you fucked the barman. you should be proud of yourself.
+    -40€
+    Sympathy +3   Fatigue +1
+    Sex Count +1</text>
+  <text key="R_S_SHAVE">Shave: Now you are like a baby again!
+    Body Hair = Smooth</text>
+  <text key="R_S_GLEE">Glee: Rachel sung one of your favorite songs and the bullies of the school were killed by a whale! awesome.
+    Self Confidence +1</text>
+  <text key="R_S_PORN">Porn: Very educational.
+    Sex Stamina +1   Fatigue -1</text>
 
   <text key="R_F_GYM_STRENGTH">Program de force failed</text>
   <text key="R_F_GYM_FITNESS">Fitness failed</text>
   <text key="R_F_GYM_POLE_DANCE">Pole Dance failed</text>
   <text key="R_F_GYM_CROSS_FIT">CrossFit failed</text>
   <text key="R_F_SAUNA_RELAX">Se relâcher failed</text>
-  <text key="R_F_SAUNA_DARK_ROOM">Dark Room: Nobody cared about you because you are disguisting.\nExtra: Self Confidence -2</text>
+  <text key="R_F_SAUNA_DARK_ROOM">Dark Room: Nobody cared about you because you are disguisting.
+    -50€
+    Fatigue -2
+    Self Confidence -2</text>
   <text key="R_F_WORK_HARD"></text>
   <text key="R_F_WORK_MUSIC">Work: I love Fifht Harmony. Why did that gal leave the groupe!!!? (angry face)</text>
-  <text key="R_F_WORK_RAISE">Work: Your boss told you that you only listen to Fifth Harmony all day long and do nothing. Now you earn less money :( </text>
+  <text key="R_F_WORK_RAISE">Work: Your boss told you that you only listen to Fifth Harmony all day long and do nothing. Now you earn less money :(
+    +Salary
+    Salary is now smaller</text>
   <text key="R_F_LE_MARAIS_SHOPPING">faire des courses failed</text>
   <text key="R_F_LE_MARAIS_MUSEUM">Musée Pompidou failed</text>
   <text key="R_F_LE_MARAIS_BEAUTY">Salon de beaute failed</text>
@@ -282,12 +332,18 @@
   <text key="R_F_VIDEOGAMES_THE_WITNESS">Jouer: The Witness failed</text>
   <text key="R_F_VIDEOGAMES_THE_SIMS">Jouer: The Sims failed</text>
   <text key="R_F_VIDEOGAMES_DARK_SOULS">Jouer: Dark Souls failed</text>
-  <text key="R_F_DOCTOR_BLOOD_TEST">I am sorry to give you the bad news... You are HIV+. Visit your doctor regularly and take care of your health. </text>
+  <text key="R_F_DOCTOR_BLOOD_TEST">I am sorry to give you the bad news... You are HIV+. Visit your doctor regularly and take care of your health. 
+    You are HIV+</text>
   <text key="R_F_DOCTOR_PSICOTHERAPIST">psico failed</text>
   <text key="R_F_DOCTOR_MASSAGE">Kine, massafe failed.</text>
-  <text key="R_F_PARTY">You danced alone all night long and came back home. No sex today, but you still have your pikachu teddy bear that loves you inconditonally!</text>
-  <text key="R_F_SHAVE">You cut yourself! \n Extra: Sexiness -1</text>
-  <text key="R_F_GLEE">Kurt and Blaine ended their relationship. You feel sad. \n Extra: Self confidence -1</text>
+  <text key="R_F_PARTY">Party: You danced alone all night long and came back home. No sex today, but you still have your pikachu teddy bear that loves you inconditonally!
+    -40€
+    Sympathy +3   Fatigue +1</text>
+  <text key="R_F_SHAVE">Shave: You cut yourself! 
+    Body Hair = Smooth
+    Sexiness -1</text>
+  <text key="R_F_GLEE">Glee: Kurt and Blaine ended their relationship. You feel sad.
+    Self confidence -1</text>
   <text key="R_F_PORN">Regarder du porno failed</text>
 
     <!-- Blinder -->
@@ -302,44 +358,72 @@
 
   <text key="BL_G1_NAME">XXL who sucks?</text>  
   <text key="BL_G1_DESCRIPTION">looking for milker for tonight</text> 
-  <text key="BL_G1_S">Your mouth is a real machine! The guy had a great time. He event made a video and then post it at Pornhub.com</text> 
-  <text key="BL_G1_F">Ok girl. You went down there. You really tried. That was a snake you weren't ready to conquer. You should train more for next time...</text> 
+  <text key="BL_G1_S">Your mouth is a real machine! The guy had a great time. He event made a video and then post it at Pornhub.com
+    Sex Confidence +1 
+    Sex Count +1</text> 
+  <text key="BL_G1_F">Ok girl. You went down there. You really tried. That was a snake you weren't ready to conquer. You should train more for next time...
+    Self Confidence -1</text> 
 
   <text key="BL_G2_NAME">CoupleCool</text>  
   <text key="BL_G2_DESCRIPTION">Threesome with hot guy. Only gym guys and not girly likes... hate them</text> 
-  <text key="BL_G2_S">The guys were russian and kept asking for more. Good job girl!</text> 
-  <text key="BL_G2_F">Ok you should have thought better before sending pics of another man with awesome abs. It didn't pass and they sent you away... You need to keep in shape man!</text>
+  <text key="BL_G2_S">The guys were russian and kept asking for more. Good job girl!
+    Sex Count +2
+    Sex Stamina +1</text> 
+  <text key="BL_G2_F">Ok you should have thought better before sending pics of another man with awesome abs. It didn't pass and they sent you away... You need to keep in shape man!
+    Self Confidence -2</text>
 
   <text key="BL_G3_NAME">masseur</text>  
   <text key="BL_G3_DESCRIPTION">j'offre massage et je suce apres pour 20€</text> 
-  <text key="BL_G3_S">The massage was awesome, the guy disguisting, but you earned 20 euros!</text> 
-  <text key="BL_G3_F">The guy tried to poison you and then eat you. Lucky for you you brought a huge dildo and punched him with that. You then ran away.</text> 
+  <text key="BL_G3_S">The massage was awesome, the guy disguisting, but you earned 20 euros!
+    Money +20
+    Fatigue -1
+    Sex Count +1</text> 
+  <text key="BL_G3_F">The guy tried to poison you and then eat you. Lucky for you you brought a huge dildo and punched him with that. You then ran away.
+    Self Confidence -10</text> 
 
-  <text key="BL_G4_NAME">turist</text>  
+  <text key="BL_G4_NAME">turist ginger</text>  
   <text key="BL_G4_DESCRIPTION">visiting for a few days looking for fun. Only for hung guys</text> 
-  <text key="BL_G4_S">Actually the pics the guy sent you werent real. When you discovered his sex you had a big surprise, actually a small surprise: his dick was microscopic!"This is not what we arranged"m you said and left home.</text> 
-  <text key="BL_G4_F">Actually the pics the guy sent you werent real. When you discovered his sex you had a big surprise, actually a small surprise: his dick was microscopic!"This is not what we arranged"m you said and left home.</text> 
+  <text key="BL_G4_S">Actually the pics the guy sent you werent real. When you discovered his sex you had a big surprise, actually a small surprise: his dick was microscopic!"This is not what we arranged" you said and left home.
+    Fatigue +1</text>
+  <text key="BL_G4_F">Your dick is tiny, but his was way worse. You had a boost in confidence!
+    Self Confidence +2</text> 
 
   <text key="BL_G5_NAME">vieux photos</text>  
-  <text key="BL_G5_DESCRIPTION">I am photographer. I pay guys to photograph them and try to touch their sex. I pay 50€</text> 
-  <text key="BL_G5_S">You discovered that you love disguisting daddies who are rich! You had a great time.</text> 
-  <text key="BL_G5_F">His dick was huge, but the pics were sooo bad... choose a better photographer another time.</text> 
+  <text key="BL_G5_DESCRIPTION">I am photographer. Not me in the pics. I pay guys to photograph them and try to touch their sex. I pay 50€</text> 
+  <text key="BL_G5_S">You discovered that you love disguisting daddies who are rich! You had a great time.
+    Sympathy +1 
+    Sex Count +1 
+    Sexiness +1</text> 
+  <text key="BL_G5_F">His dick was huge, but the pics were sooo bad... choose a better photographer another time. Or change your face...
+    Sex Count +1
+    Self Confidence -1</text> 
 
   <text key="BL_G6_NAME">mec normal</text>  
   <text key="BL_G6_DESCRIPTION">si je suis normal, pourquoi je mets cette photo de profile? chc mecs sympas</text> 
-  <text key="BL_G6_S">You had a great time! He was so funny and you had great sex. You would be interted in him if he didn't have a boyfriend.</text> 
-  <text key="BL_G6_F">Actually you are a classy bitch unable to connect with others. The guy was serious but you only wanted sex. He sashed you away</text>
+  <text key="BL_G6_S">You had a great time! He was so funny and you had great sex. You would be interted in him if he didn't have a boyfriend.
+    Sympathy +1
+    Sex Stamina +1
+    Sex Count +1</text> 
+  <text key="BL_G6_F">Actually you are a classy bitch unable to connect with others. The guy was serious but you only wanted sex. He sashed you away
+    Sympathy -1
+    Self Confidence +1(cause youre better than him bitch!)</text>
 
   <text key="BL_G7_NAME">nike</text>  
   <text key="BL_G7_DESCRIPTION">love socks and big shoes. I lick your feet. Only for endurant guys.  </text> 
-  <text key="BL_G7_S">You got it girl, had a great time sucking his socks, feet and others.</text> 
-  <text key="BL_G7_F">You discovered that you are precocius and came too fast. The guy wasnt happy and throw at you all his shoes to your head. It hurt.</text>  
+  <text key="BL_G7_S">You got it girl, had a great time sucking his socks, feet and others.
+    Sex Count +1 
+    Sex Stamina +1</text> 
+  <text key="BL_G7_F">You discovered that you are precocius and came too fast. The guy wasnt happy and throw at you all his shoes to your head. It hurt.
+    Sex Stamina -1
+    Self Confidence -1</text>    
 
   <text key="BL_G8_NAME">french arab</text>  
   <text key="BL_G8_DESCRIPTION">for fat and hairy guys</text> 
-  <text key="BL_G8_S">I wont descrive the scene, sorry. But you had fun whatsoever. </text> 
-  <text key="BL_G8_F">He didn't like you because you didn't have enough hair.</text>
-
+  <text key="BL_G8_S">I wont descrive the scene, sorry, it's too grose even for me. But you had fun whatsoever. And you ate a lot of donuts
+    Sex Count +1
+    Body Fat +5 </text>
+  <text key="BL_G8_F">He didn't like you because you didn't have enough hair or had way too much muscles.
+    Self Confidence -2</text>
      <!-- Misc -->
   <text key=""> </text>
   <text key="EUROS">€</text>
